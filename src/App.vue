@@ -1,15 +1,46 @@
 <template>
-  <div>
-    <h1>Hello</h1>
+  <div id="nav">
+    <router-link to="/"></router-link>
   </div>
+
+  <header>
+    <Header>
+    </Header>
+  </header>
+  <main>
+    <router-view></router-view>
+  </main>
+  <footer>
+    <Footer>
+    </Footer>
+  </footer>
+
+ 
+
+
+
 </template>
 
+
+
 <script>
-  export default {
+
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
+
+export default {
+  components: {
+
+    Header,
+    Footer,
 
   }
+}
+
 </script>
 
-<style scoped>
+<style>
+
+
 
 </style>
