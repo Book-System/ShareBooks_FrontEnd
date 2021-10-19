@@ -1,20 +1,39 @@
 <template>
-   <div class="card" style="width: 50rem; height: 60rem">
-  <div class="card-body">
-
-    <h1 class="card-title">로그인</h1>
-    <div>
-    <label>아이디</label>
-    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+<div class="container">
+  <div class="row">
+    <div class="col">
     </div>
-    
-    <label>비밀번호</label>
-    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-    <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Button</button>
-        <button class="btn btn-primary" type="button">Button</button>
-    </div>
+      <div class="col card" style="width: 50rem; height: 40rem">
+        <div class="card-body">
 
+          <h1 class="card-title">로그인</h1><br/>
+
+          <div>
+          <label>아이디</label>
+          <input type="text" class="form-control" placeholder="아이디를 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+          <br/>
+
+          <div>
+          <label>비밀번호</label>
+          <input type="text" class="form-control" placeholder="비밀번호를 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+          <br/>
+
+          <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">로그인</button>
+              <button class="btn btn-warning" type="button">카카오 로그인</button><br/>
+              <div class="account">
+                계정이 없으신가요?
+                <a href="#">회원가입 하기</a>
+              </div>
+          </div>
+        </div>
+      </div>
+        <div class="col">
+        </div>
   </div>
 </div>
 </template>
@@ -26,6 +45,7 @@
 </script>
 
 <style>
-
-
+  .account {
+    text-align: center;
+  }
 </style>
