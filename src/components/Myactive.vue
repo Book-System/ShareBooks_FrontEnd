@@ -27,7 +27,7 @@
               </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="card" style="padding:30px">
               <div class="card-body">
                     <div class="row">
@@ -40,22 +40,69 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                       <div class="col">
                         <div class="card">
-                          <img src="..." class="card-img-top">
+                          <!-- <img src="" class="card-img-top"> -->
                           <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
+                            <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
+                            <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
                           </div>
                         </div>
                       </div>
                       <div class="col">
                         <div class="card">
                           <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
+                            <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
+                            <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <br/>
+
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
+                            <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
+                            <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
+                            <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
+                            <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br/>
+
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
+                            <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
+                            <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
+                            <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
+                            <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
               </div>
           </div>
         </div>
@@ -73,8 +120,5 @@
   .mypage {
     color: white;
     text-align: center;
-  }
-  .btn {
-    margin-left: 80px;
   }
 </style>

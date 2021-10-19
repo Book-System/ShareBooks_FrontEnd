@@ -27,91 +27,44 @@
               </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-7">
           <div class="card" style="padding:30px">
               <div class="card-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4>내 프로필</h4>
+                            <h4>My PROFILE</h4>
                             <hr>
                         </div>
                     </div>
+
                     <div class="row">
-                        <div class="col-md-10">
-                            <form>
-                              <label>아이디</label>
-                              <input type="text" class="form-control" placeholder="alal@1212" aria-label="Username" aria-describedby="basic-addon1">
-                              <br/>
+                      <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-                              <div>
-                              <label>현재 비밀번호</label>
-                              <input type="text" class="form-control" placeholder="현재 비밀번호" aria-label="Username" aria-describedby="basic-addon1">
-                              </div>
-                              <br/>
+                        <h4>나나나님</h4>
+                        <p>안녕하세요. 나나나입니다.</p>
+                        <p>abab@naver.com</p>
+                        
+                      </div>
 
-                              <div>
-                              <label>새 비밀번호</label>
-                              <input type="text" class="form-control" placeholder="새 비밀번호" aria-label="Username" aria-describedby="basic-addon1">
-                              </div>
-                              <br/>
+                      <div class="col-lg-4">
+                        <h4>나의 활동내역 보기</h4>
+                        <p>내가 빌려준 책</p>
+                        <p>0</p>
+                        <p>내가 빌린 책</p>
+                        <p>1</p>
+                      </div>
 
-                              <div>
-                              <label>새 비밀번호</label>
-                              <input type="text" class="form-control" placeholder="새 비밀번호 재확인" aria-label="Username" aria-describedby="basic-addon1">
-                              </div>
-                              <br/>
+                      <div class="col-lg-4">
+                        <h4>내가 쓴글 보기</h4>
+                        <p>내가 쓴 게시글</p>
+                        <p>0</p>
+                        <p>내가 쓴 리뷰</p>
+                        <p>1</p>
+                      </div>
+                    </div>
 
-                              <div>
-                              <label>이름</label>
-                              <input type="text" class="form-control" placeholder="나나나" aria-label="Username" aria-describedby="basic-addon1">
-                              </div>
-                              <br/>
 
-                              
-                              <div>
-                              <label>생년월일</label>
-                              <input type="text" class="form-control" placeholder="999999" aria-label="Username" aria-describedby="basic-addon1">
-                              </div>
-                              <br/>
-
-                              <label>닉네임</label>
-                              <div class="row">
-                                <div class="col-sm-7">
-                                  <input type="text" class="form-control" placeholder="ㅁㅁㅁ" aria-label="Username" aria-describedby="basic-addon1">
-                                </div>
-                              <div class="col-sm-4 d-grid gap-2 d-md-block">
-                                <button class="btn btn-primary" type="button">중복확인</button>
-                              </div>
-                              </div>
-                              <br/>
-
-                              <div>
-                              <label>전화번호</label>
-                              <input type="text" class="form-control" placeholder="010-0000-1111" aria-label="Username" aria-describedby="basic-addon1">
-                              </div>
-                              <br/>
-
-                              <label>주소</label>
-                              <div class="row">
-                                <div class="col-sm-7">
-                                  <input type="text" class="form-control" placeholder="06000" aria-label="Username" aria-describedby="basic-addon1">
-                                </div>
-                              <div class="col-sm-4 d-grid gap-2 d-md-block">
-                                <button class="btn btn-primary" type="button">우편번호 찾기</button>
-                              </div>
-                                <div class="col-sm-12">
-                                  <input type="text" class="form-control" placeholder="부산광역시 사상구" aria-label="Username" aria-describedby="basic-addon1">
-                                </div>
-                              </div>
-                              <br/>
-
-                              <div class="btn">
-                              <button type="button" class="btn btn-primary btn-lg">수정하기</button>
-                              </div>
-
-                            </form>
-                        </div>
-                    </div>   
               </div>
           </div>
         </div>
