@@ -1,10 +1,10 @@
 <template>
 <div class="container">
   <div class="row">
-    <div class="col" style="width: 100rem;">
+    <div class="col">
     </div>
-      <div class="col card" style="width: 200rem; height: 75rem">
-        <div class="card-body">
+      <div class="col-md-7 card">
+        <div id="card1" class="card-body">
 
           <h1 class="card-title">회원가입</h1><br/>
 
@@ -68,7 +68,7 @@
           </div>
           <br/>
 
-          <div class="d-grid gap-2">
+          <div id="join" class="d-grid gap-2">
               <button class="btn btn-primary" type="button">회원가입</button>
           </div>
         </div>
@@ -86,7 +86,7 @@
 </script>
 
 <style>
-.card-body{
-  padding: 40px;
-} 
+#join {
+  padding-right: 50px;
+}
 </style>
