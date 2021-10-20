@@ -27,7 +27,7 @@
               </div>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-7">
           <div class="card" style="padding:30px">
               <div class="card-body">
                     <div class="row">
@@ -80,7 +80,7 @@
                                   <input type="text" class="form-control" placeholder="ㅁㅁㅁ" aria-label="Username" aria-describedby="basic-addon1">
                                 </div>
                               <div class="col-sm-4 d-grid gap-2 d-md-block">
-                                <button class="btn btn-primary" type="button">중복확인</button>
+                                <button class="btn1 btn-primary" type="button">중복확인</button>
                               </div>
                               </div>
                               <br/>
@@ -97,17 +97,13 @@
                                   <input type="text" class="form-control" placeholder="06000" aria-label="Username" aria-describedby="basic-addon1">
                                 </div>
                               <div class="col-sm-4 d-grid gap-2 d-md-block">
-                                <button class="btn btn-primary" type="button">우편번호 찾기</button>
+                                <button class="btn1 btn-primary" type="button">우편번호 찾기</button>
                               </div>
                                 <div class="col-sm-12">
                                   <input type="text" class="form-control" placeholder="부산광역시 사상구" aria-label="Username" aria-describedby="basic-addon1">
                                 </div>
                               </div>
                               <br/>
-
-                              <div class="btn">
-                              <button type="button" class="update btn-primary btn-lg">수정하기</button>
-                              </div>
 
                             </form>
                         </div>
