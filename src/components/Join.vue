@@ -66,7 +66,11 @@
             </div>
           </div>
           <br/>
+          <br/>
 
+            <div id="joinbtn" class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" type="button">회원가입</button>
+            </div>
 
         </div>
       </div>
@@ -86,4 +90,9 @@
 #join {
   padding-right: 50px;
 }
+
+#joinbtn {
+  padding-left: 150px;
+}
+
 </style>

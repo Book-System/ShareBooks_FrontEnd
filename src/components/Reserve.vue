@@ -40,6 +40,10 @@
                     <textarea class="form-control" placeholder="호스트에게 요청할 사항을 입력하세요" id="floatingTextarea2" style="height: 100px"></textarea>
                 </div>
                 <br/>
+
+                    <div id="joinbtn" class="d-grid gap-2 d-md-block">
+                        <button class="btn btn-primary" type="button">예약하기</button>
+                    </div>
                 </div>
             </div>
 
@@ -65,6 +69,7 @@
     
                         </ul>
                     </div>
+
                 </div>
 
         </div>

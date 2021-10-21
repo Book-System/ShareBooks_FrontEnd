@@ -63,7 +63,9 @@
         </div>
         <br/>
 
-          
+            <div id="joinbtn" class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" type="button">등록하기</button>
+            </div>
 
         </div>
       </div>

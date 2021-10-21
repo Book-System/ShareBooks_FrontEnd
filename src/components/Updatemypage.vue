@@ -105,6 +105,10 @@
                               </div>
                               <br/>
 
+                        <div id="joinbtn" class="d-grid gap-2 d-md-block">
+                          <button class="btn btn-primary" type="button">수정하기</button>
+                        </div>
+
                             </form>
                         </div>
                     </div>   
