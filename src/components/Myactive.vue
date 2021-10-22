@@ -37,6 +37,17 @@
                         </div>
                     </div>
 
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">빌려준 책</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">빌린 책</a>
+                      </li>
+                    </ul>
+                    <br/>
+
+
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                       <div class="col">
                         <div class="card">

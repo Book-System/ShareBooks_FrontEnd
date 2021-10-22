@@ -10,6 +10,8 @@ import Updatemypage from '@/components/Updatemypage.vue';
 import Mypagewriting from '@/components/Mypagewriting.vue';
 import Register from '@/components/Register.vue';
 import Reserve from '@/components/Reserve.vue';
+import Slider from '@/components/Slider.vue';
+import Slider2 from '@/components/Slider2.vue';
 
 const routes = [
     { path: '/', name: 'Home', component:Home },
@@ -22,6 +24,9 @@ const routes = [
     { path: '/Mypagewriting', name: 'Mypagewriting', component: Mypagewriting},
     { path: '/Register', name: 'Register', component: Register},
     { path: '/Reserve', name: 'Reserve', component: Reserve},
+    { path: '/Slider', name: 'Slider', component: Slider},
+    { path: '/Slider2', name: 'Slider2', component: Slider2},
+
 ];
 
 const router = createRouter({
