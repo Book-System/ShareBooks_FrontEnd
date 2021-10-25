@@ -23,8 +23,9 @@
           <br/>
 
           <div id="login" class="d-grid gap-2">
-              <button class="btn btn-primary" type="button">로그인</button>
-              <button class="btn btn-warning" type="button">카카오 로그인</button><br/>
+              <button class="btn1 btn-primary" type="button">로그인</button>
+              <button class="btn1 btn-warning" type="button">카카오 로그인</button><br/>
+
           </div>
 
               <div class="account">
@@ -49,8 +50,5 @@
 <style>
   .account {
     text-align: center;
-  }
-  #login {
-    padding-right: 70px;
   }
 </style>

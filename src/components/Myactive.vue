@@ -51,20 +51,67 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                       <div class="col">
                         <div class="card">
-                          <!-- <img src="" class="card-img-top"> -->
+                          <img src="http://www.greenart.co.kr/upimage/new_editor/201712/20171213171136.jpg" class="card-img-top" id="cardimage">
                           <div class="card-body">
                             <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
                             <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
                             <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
                           </div>
+
+                          <div id="parent">
+                            <button id="second"  class="btn1 btn-outline-primary" type="button">삭제</button>
+                            <button id="first"  class="btn1 btn-primary" type="button">수정</button>
+                          </div>
+
                         </div>
                       </div>
                       <div class="col">
                         <div class="card">
+                            <img src="http://www.greenart.co.kr/upimage/new_editor/201712/20171213171136.jpg" class="card-img-top" id="cardimage">
                           <div class="card-body">
                             <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
                             <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
                             <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
+                          </div>
+
+                          <div id="parent">
+                            <button id="second"  class="btn1 btn-outline-primary" type="button">삭제</button>
+                            <button id="first"  class="btn1 btn-primary" type="button">수정</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <br/>
+
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                      <div class="col">
+                        <div class="card">
+                              <img src="http://www.greenart.co.kr/upimage/new_editor/201712/20171213171136.jpg" class="card-img-top" id="cardimage">
+                          <div class="card-body">
+                            <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
+                            <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
+                            <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
+                          </div>
+
+                          <div id="parent">
+                            <button id="second"  class="btn1 btn-outline-primary" type="button">삭제</button>
+                            <button id="first"  class="btn1 btn-primary" type="button">수정</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                            <img src="http://www.greenart.co.kr/upimage/new_editor/201712/20171213171136.jpg" class="card-img-top" id="cardimage">
+                          <div class="card-body">
+                            <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
+                            <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
+                            <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
+                          </div>
+
+                          <div id="parent">
+                            <button id="second"  class="btn1 btn-outline-primary" type="button">삭제</button>
+                            <button id="first"  class="btn1 btn-primary" type="button">수정</button>
                           </div>
                         </div>
                       </div>
@@ -74,41 +121,31 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                       <div class="col">
                         <div class="card">
+                          <img src="http://www.greenart.co.kr/upimage/new_editor/201712/20171213171136.jpg" class="card-img-top" id="cardimage">
                           <div class="card-body">
                             <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
                             <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
                             <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
                           </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
-                            <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
-                            <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <br/>
 
-                    <div class="row row-cols-1 row-cols-md-2 g-4">
-                      <div class="col">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
-                            <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
-                            <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
+                          <div id="parent">
+                            <button id="second"  class="btn1 btn-outline-primary" type="button">삭제</button>
+                            <button id="first"  class="btn1 btn-primary" type="button">수정</button>
                           </div>
                         </div>
                       </div>
                       <div class="col">
                         <div class="card">
+                          <img src="http://www.greenart.co.kr/upimage/new_editor/201712/20171213171136.jpg" class="card-img-top" id="cardimage">
                           <div class="card-body">
                             <h5 class="card-title">책 빌려드립니다. 하루 200원!</h5>
                             <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
                             <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
+                          </div>
+
+                          <div id="parent">
+                            <button id="second"  class="btn1 btn-outline-primary" type="button">삭제</button>
+                            <button id="first"  class="btn1 btn-primary" type="button">수정</button>
                           </div>
                         </div>
                       </div>
@@ -132,4 +169,23 @@
     color: white;
     text-align: center;
   }
+
+  #parent{
+    width: 100%;
+    margin: 10px auto;
+    padding-right: 10px;
+}
+
+  #first {
+    float: right;
+    width: 20%;
+}
+
+  #second{
+    float: right;
+    margin-left: 2%;
+    width: 20%;
+}
+
+
 </style>
