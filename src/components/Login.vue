@@ -1,4 +1,5 @@
 <template>
+
 <div class="container">
   <div class="row">
     <div class="col">
@@ -25,8 +26,9 @@
           <div id="login" class="d-grid gap-2">
               <button class="btn1 btn-primary" type="button">로그인</button>
               <button class="btn1 btn-warning" type="button">카카오 로그인</button><br/>
-
           </div>
+
+              <img class="kakao_btn" src="@/image/login/kakao_login_medium_wide.png" @click="loginWithKakao"/>
 
               <div class="account">
                 계정이 없으신가요?
@@ -42,9 +44,17 @@
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+    name: "LoginKakao",
+    methods: {
+        loginWithKakao() {
+            const params = {
+                redirectUri: "http://localhost:8080/auth",
+            };
+            window.Kakao.Auth.authorize(params);
+        },
+    },
+};
 </script>
 
 <style>
