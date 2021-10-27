@@ -23,16 +23,14 @@
 
           <br/>
 
-          <div id="login" class="d-grid gap-2">
-              <button class="btn1 btn-primary" type="button">로그인</button>
-              <button class="btn1 btn-warning" type="button">카카오 로그인</button><br/>
+          <div id="logincheck" class="d-grid gap-2">
+              <button class="btn1 btn-primary" type="button" style="height: 30px;">로그인</button>
           </div>
-
-              <img class="kakao_btn" src="@/image/login/kakao_login_medium_wide.png" @click="loginWithKakao"/>
+          <br/>
 
               <div class="account">
                 계정이 없으신가요?
-                <a href="#">회원가입 하기</a>
+                <a href="./Join">회원가입 하기</a>
               </div>
 
         </div>
@@ -44,21 +42,20 @@
 </template>
 
 <script>
-export default {
-    name: "LoginKakao",
-    methods: {
-        loginWithKakao() {
-            const params = {
-                redirectUri: "http://localhost:8080/auth",
-            };
-            window.Kakao.Auth.authorize(params);
-        },
-    },
-};
+// export default {
+//    methods: {
+//      login() {
+//        window.location.replace(
+//          "https://kauth.kakao.com/oauth/authorize?client_id=AppKey&redirect_uri=http://127.0.0.1:8080/login&response_type=code"
+//        );
+//      },
+//   },
+// };
 </script>
 
 <style>
   .account {
     text-align: center;
   }
+
 </style>

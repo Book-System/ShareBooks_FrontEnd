@@ -27,8 +27,8 @@
       </div>
 
       <ul class="nav">
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">로그인</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">회원가입</a></li>
+        <li class="nav-item"><a href="./Login" class="nav-link link-dark px-2">로그인</a></li>
+        <li class="nav-item"><a href="./Join" class="nav-link link-dark px-2">회원가입</a></li>
       </ul>
     </header>
   </div>
