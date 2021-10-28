@@ -13,6 +13,7 @@ import Reserve from '@/components/Reserve.vue';
 import Slider from '@/components/Slider.vue';
 import Slider2 from '@/components/Slider2.vue';
 import HelloWorld from '@/components/HelloWorld.vue';
+import Chat from '@/components/Chat.vue';
 
 const routes = [
     { path: '/', name: 'Home', component:Home },
@@ -28,6 +29,7 @@ const routes = [
     { path: '/Slider', name: 'Slider', component: Slider},
     { path: '/Slider2', name: 'Slider2', component: Slider2},
     { path: '/HelloWorld', name: 'HelloWorld', component: HelloWorld},
+    { path: '/Chat', name: 'Chat', component: Chat},
 ];
 
 const router = createRouter({

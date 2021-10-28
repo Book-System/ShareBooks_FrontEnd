@@ -1,9 +1,9 @@
 <template>
     <div id="banner" class="col bg-dark p-5 rounded">
           <h3 class="mypage">이달의 대여</h3><br/>
-          <h5 class="mypage">가장 많이 대여한 이달의 대여는?!</h5>
+          
     </div><br/>
-
+  
 <div class="container">
   
   <div id="demo" class="carousel slide" data-ride="carousel">

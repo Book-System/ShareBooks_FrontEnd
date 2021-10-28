@@ -20,7 +20,10 @@
                 </div>
                 <br/>
                 
-                <label>예약날짜</label>
+                <label>시작일</label>
+                <p><input type="date"></p><br/>
+
+                <label>반납일</label>
                 <p><input type="date"></p><br/>
 
                 <div>
