@@ -12,6 +12,7 @@ import Register from '@/components/Register.vue';
 import Reserve from '@/components/Reserve.vue';
 import Slider from '@/components/Slider.vue';
 import Slider2 from '@/components/Slider2.vue';
+import HelloWorld from '@/components/HelloWorld.vue';
 
 const routes = [
     { path: '/', name: 'Home', component:Home },
@@ -26,7 +27,7 @@ const routes = [
     { path: '/Reserve', name: 'Reserve', component: Reserve},
     { path: '/Slider', name: 'Slider', component: Slider},
     { path: '/Slider2', name: 'Slider2', component: Slider2},
-
+    { path: '/HelloWorld', name: 'HelloWorld', component: HelloWorld},
 ];
 
 const router = createRouter({

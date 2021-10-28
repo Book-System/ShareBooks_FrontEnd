@@ -26,6 +26,7 @@
           <div id="logincheck" class="d-grid gap-2">
               <button class="btn1 btn-primary" type="button" style="height: 30px;">로그인</button>
           </div>
+          
           <br/>
 
               <div class="account">
@@ -41,17 +42,6 @@
 </div>
 </template>
 
-<script>
-// export default {
-//    methods: {
-//      login() {
-//        window.location.replace(
-//          "https://kauth.kakao.com/oauth/authorize?client_id=AppKey&redirect_uri=http://127.0.0.1:8080/login&response_type=code"
-//        );
-//      },
-//   },
-// };
-</script>
 
 <style>
   .account {
