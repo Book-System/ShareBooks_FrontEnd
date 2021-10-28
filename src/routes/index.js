@@ -14,6 +14,9 @@ import Slider from '@/components/Slider.vue';
 import Slider2 from '@/components/Slider2.vue';
 import HelloWorld from '@/components/HelloWorld.vue';
 import Chat from '@/components/Chat.vue';
+import BookDetail from '@/components/BookDetail.vue';
+import BookList from '@/components/BookList.vue';
+import BookList2 from '@/components/BookList2.vue';
 
 const routes = [
     { path: '/', name: 'Home', component:Home },
@@ -30,6 +33,9 @@ const routes = [
     { path: '/Slider2', name: 'Slider2', component: Slider2},
     { path: '/HelloWorld', name: 'HelloWorld', component: HelloWorld},
     { path: '/Chat', name: 'Chat', component: Chat},
+    { path: '/BookDetail', name: 'BookDetail', component: BookDetail},
+    { path: '/BookList', name: 'BookList', component: BookList},
+    { path: '/BookList2', name: 'BookList2', component: BookList2},
 ];
 
 const router = createRouter({

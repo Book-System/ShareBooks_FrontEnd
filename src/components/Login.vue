@@ -26,8 +26,19 @@
           <div id="logincheck" class="d-grid gap-2">
               <button class="btn1 btn-primary" type="button" style="height: 30px;">로그인</button>
           </div>
-          
+
+          <!-- <a v-bind:href="kakaoLogin()"></a> -->
+
+          <!-- <a href="javascript:kakaoLogin();"><img src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png" style="height: 60px; width: auto;"</a> -->
+
+          <!-- <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
+          <div id="app">
+            <img v-bind:src="kakaoimage" />
+          </div> -->
+
           <br/>
+
 
               <div class="account">
                 계정이 없으신가요?
@@ -42,6 +53,35 @@
 </div>
 </template>
 
+<script>
+    // var model = {
+    //     kakaoimage: 'https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png'
+    // };
+
+    // var test = new Vue({ 
+    //           el : 'app', 
+    //           data : model
+    //       })
+
+
+    // window.Kakao.init("257c607c24f7d50242038cd2effa3765");
+
+    // function kakaoLogin() {
+    //   window.Kakao.Auth.login({
+    //     scope:'profile_nickname, profile_image, account_email, gender',
+    //     success : function(authObj) {
+    //       console.log(authObj);
+    //       window.kakao.API.request({
+    //         url : '/v2/user/me',
+    //         success : res => {
+    //           const kakao_account = res.kakao_account;
+    //           console.log(kakao_account);
+    //         }
+    //       });
+    //     }
+    //   });
+    // }
+</script>
 
 <style>
   .account {
