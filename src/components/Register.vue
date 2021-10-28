@@ -19,10 +19,28 @@
           </div>
           <br/>
 
+           <label>글내용</label>
+          <div class="form-floating">
+                <textarea class="form-control" placeholder="책상태 등 대여에 필요한 정보를 입력하세요" id="floatingTextarea2" style="height: 100px"></textarea>
+          </div>
+         <br/>
+
+           <div>
+          <label>책제목</label>
+          <input type="text" class="form-control" placeholder="등록할 책 제목을 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <br/>
+
+           <div>
+          <label>책내용</label>
+          <input type="text" class="form-control" placeholder="책에 대해 소개해주세요" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <br/>
+
           <label>주소</label>
           <div class="row">
             <div class="col-sm-8">
-              <input type="text" class="form-control" placeholder="주소 검색을 클릭해주세요" aria-label="Username" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" placeholder="책을 대여할 장소를 지정해주세요" aria-label="Username" aria-describedby="basic-addon1">
             </div>
           <div class="col-sm-4 d-grid gap-2 d-md-block">
             <button class="btn1 btn-primary" type="button">주소검색</button>
@@ -38,13 +56,54 @@
           </div>
           <br/>
 
-          <label>#해시태그</label>
-          <div class="row">
-            <div class="col-sm-8">
-              <input type="text" class="form-control" placeholder="# 책장르를 입력해주세요" aria-label="Username" aria-describedby="basic-addon1">
+          <label>카테고리</label>
+          <br>
+          
+           <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                카테고리1
+                 </label>
             </div>
-          </div>
-          <br/>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              카테고리2
+            </label>
+            </div>
+
+            
+           <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                카테고리3
+                 </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              카테고리4
+            </label>
+            </div>
+
+            
+           <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                카테고리5
+                 </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              카테고리6
+            </label>
+            </div>
+
+            
+            
+       
+          <br/><br/>
 
         <label>대표 이미지 첨부</label>
         <div class="input-group mb-3">
@@ -57,11 +116,7 @@
         </div>
         <br/>
         
-        <label>글내용</label>
-        <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-        </div>
-        <br/>
+       
 
             <div id="joinbtn" class="d-grid gap-2 d-md-block">
               <button class="btn btn-primary" type="button">등록하기</button>
