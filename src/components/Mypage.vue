@@ -14,6 +14,7 @@
                         <a href="./Updatemypage" class="list-group-item">내 정보수정</a>
                         <a href="./Myactive" class="list-group-item">나의 활동내역</a>
                         <a href="./Mypagewriting" class="list-group-item">글 관리</a>
+                        <a href="#" class="list-group-item">책 추천</a>
                     </ul>
               </div>
 

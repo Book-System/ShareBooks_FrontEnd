@@ -1,17 +1,20 @@
 <template>
- <div id="contentCover">
+    <div id="contentCover">
         <div id="roomWrap">
             <div id="roomList">
+ 
                 <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 380px;">
+                 <div id="chatHeader"></div>
 
-                    <div class="list-group list-group-flush border-bottom scrollarea">
-                    <a href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
+                    <div class="list-group list-group-flush scrollarea">
+
+                    <!-- <a href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
                         <div class="d-flex w-100 align-items-center justify-content-between">
                         <strong class="mb-1">List group item heading</strong>
-                        <small>Wed</small>
                         </div>
                         <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-                    </a>
+                    </a> -->
+                              
 
                     <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
                         <div class="d-flex w-100 align-items-center justify-content-between">
@@ -69,15 +72,13 @@
                         <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
                     </a>
                     
-                    <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-
-                    </a>
                     
                     </div>
                 </div>
             </div>
         </div>
         <div id="chatWrap">
+            
             <div id="chatHeader">Everyone</div>
             <div id="chatLog">
                 <div class="anotherMsg">
@@ -108,7 +109,7 @@
 }
 
 /* #roomList {
-    border: 1px solid #0084FF;
+    border: 1px solid #ddd;
     border-radius: 5px;
 } */
 
@@ -118,16 +119,16 @@
 }
 
 #chatHeader {
-    height: 60px;
+    height: 40px;
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
     font-size: 25px;
     font-weight: 900;
     border-bottom: 1px solid #ddd;
 }
 
 #chatLog {
-    height: 700px;
+    height: 500px;
     overflow-y: auto;
     padding: 10px;
 }
@@ -194,8 +195,8 @@
 #contentCover{
     width: 1280px;
     margin: 0 auto;
-    padding-top: 20px;
+    /* padding-top: 10px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 </style>

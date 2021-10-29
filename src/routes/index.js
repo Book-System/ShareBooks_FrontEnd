@@ -17,6 +17,7 @@ import Chat from '@/components/Chat.vue';
 import BookDetail from '@/components/BookDetail.vue';
 import BookList from '@/components/BookList.vue';
 import BookList2 from '@/components/BookList2.vue';
+import Customer from '@/components/Customer.vue';
 
 const routes = [
     { path: '/', name: 'Home', component:Home },
@@ -36,6 +37,7 @@ const routes = [
     { path: '/BookDetail', name: 'BookDetail', component: BookDetail},
     { path: '/BookList', name: 'BookList', component: BookList},
     { path: '/BookList2', name: 'BookList2', component: BookList2},
+    { path: '/Customer', name: 'Customer', component: Customer},
 ];
 
 const router = createRouter({
