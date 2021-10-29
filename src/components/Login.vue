@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col">
     </div>
-      <div class="col card" style="width: 50rem; height: 40rem">
+      <div class="col card" style="width: 50rem; height: 50rem">
         <div class="card-body">
 
           <h1 class="card-title">로그인</h1><br/>
@@ -24,21 +24,15 @@
           <br/>
 
           <div id="logincheck" class="d-grid gap-2">
-              <button class="btn1 btn-primary" type="button" style="height: 30px;">로그인</button>
+              <button class="btn1 btn-primary" type="button" style="height: 52px;">로그인</button>
           </div>
-
-          <!-- <a v-bind:href="kakaoLogin()"></a> -->
-
-          <!-- <a href="javascript:kakaoLogin();"><img src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png" style="height: 60px; width: auto;"</a> -->
-
-          <!-- <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-
-          <div id="app">
-            <img v-bind:src="kakaoimage" />
-          </div> -->
-
           <br/>
-
+          <div class="kakao">            
+            <img src="../assets/kakao_login_medium_wide.png" style="height: 53px; width: auto;" @click="login()"/>
+            
+          </div>
+                  
+          <br/>
 
               <div class="account">
                 계정이 없으신가요?
@@ -52,36 +46,19 @@
   </div>
 </div>
 </template>
-
 <script>
-    // var model = {
-    //     kakaoimage: 'https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png'
-    // };
-
-    // var test = new Vue({ 
-    //           el : 'app', 
-    //           data : model
-    //       })
-
-
-    // window.Kakao.init("257c607c24f7d50242038cd2effa3765");
-
-    // function kakaoLogin() {
-    //   window.Kakao.Auth.login({
-    //     scope:'profile_nickname, profile_image, account_email, gender',
-    //     success : function(authObj) {
-    //       console.log(authObj);
-    //       window.kakao.API.request({
-    //         url : '/v2/user/me',
-    //         success : res => {
-    //           const kakao_account = res.kakao_account;
-    //           console.log(kakao_account);
-    //         }
-    //       });
-    //     }
-    //   });
-    // }
+export default {
+  methods: {
+    login() {
+      window.location.replace(
+       "https://kauth.kakao.com/oauth/authorize?client_id=1369da4b522d2f4b32c277d58885eef0&redirect_uri=http://localhost:8080/join&response_type=code"
+      );
+    },
+  },
+  
+};
 </script>
+
 
 <style>
   .account {
