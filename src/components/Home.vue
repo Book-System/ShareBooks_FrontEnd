@@ -21,7 +21,7 @@
       <div class="text-right">
         <h1>책 대여에 대한 설명</h1>
         <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
-        <a class="btn btn-lg btn-primary" href="/docs/5.1/components/navbar/" role="button">&laquo; 책 대여하기</a>
+        <a class="btn btn-lg btn-primary" href="./register" role="button">&laquo; 책 대여하기</a>
       </div>
     </div>
   </div>

@@ -4,58 +4,90 @@
     <div class="row">
         <div class="col-md-3">
             <div class="panel panel-default">
-                <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
-                    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-                    <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-                    <span class="fs-5 fw-semibold">고객센터</span>
-                    
-                    </a>
-                    <ul class="list-unstyled ps-0">
-                    <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-                        문의하기
-                        </button>
-                    </li>
-
-                    <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-                        문의게시판
-                        </button>
-                    </li>
-
-                    <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-                        자주묻는질문
-                        </button>
-                    </li>
+                <div class="panel-heading">
+                  <h3 class="panel-title">고객센터</h3>
+                </div>
+                    <ul class="list-group">
+                        <a href="#" class="list-group-item">문의하기</a>
+                        <a href="#" class="list-group-item">문의게시판</a>
+                        <a href="#" class="list-group-item">자주묻는질문</a>
                     </ul>
                 </div>
-            </div>
-
-
         </div>
 
-        <div class="col-md-9">
-          <div class="card" style="padding:30px">
-              <div class="card-body">
+            <div class="col-md-9">
+            <div class="card" style="padding:30px">
+                <div class="card-body">
                     <div class="row">
-                        <div class="col-md-12">
-                            <h1>문의하기</h1>
-                            <hr/>
                             
-                        </div>
+                        <h4>문의작성</h4>
+                        <hr/>
+                        <form method = "get" action = "write_action.php">
+                        <table  style="padding-top:50px" align = center width=700 border=0 cellpadding=2 >
+                        <tr>
+                        <td bgcolor=white>
+                        <table class = "table2">
+
+                                <tr>
+                                <td>문의유형</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                    <option selected>문의유형 선택</option>
+                                    <option value="1">교환</option>
+                                    <option value="2">환불</option>
+                                    <option value="3">취소</option>
+                                    <option value="4">배송</option>
+                                    <option value="5">A/S</option>
+                                    </select>
+                                </td>
+                                </tr>
    
 
-       
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4 text-center">
-                                <ul class="pagination" id="myPager"></ul>
-                            </div>
-                        </div>
-                      </div>
+                                <tr>
+                                <td>주문번호</td>
+                                <td><input type = text name = name size=60> </td>
+                                </tr>
+                                
+                                <tr>
+                                <td>작성자</td>
+                                <td><input type = text name = name size=60> </td>
+                                </tr>
 
-              </div>
-          </div>
+                                <tr>
+                                <td>휴대전화</td>
+                                <td><input type = text name = name size=60> </td>
+                                </tr>
+
+                                <tr>
+                                <td>이메일</td>
+                                <td><input type = text name = name size=60> </td>
+                                </tr>
+
+                                <tr>
+                                <td>제목</td>
+                                <td><input type = text name = name size=60> </td>
+                                </tr>
+
+                                <tr>
+                                <td>내용</td>
+
+                                 <td><ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor></td>
+                                </tr>
+        
+                                </table>
+
+                                
+        
+                                <center>
+                                <input type = "submit" value="작성">
+                                </center>
+                        </td>
+                        </tr>
+                        </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   </div>
@@ -63,12 +95,26 @@
 </template>
 
 <script>
+    import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+
     export default {
-        
+        name: 'app',
+        data() {
+            return {
+                editor: ClassicEditor,
+                editorData: '<p>Content of the editor.</p>',
+                editorConfig: {
+                    // The configuration of the editor.
+                }
+            };
+        }
     }
 </script>
 
 <style>
+.ck-editor__editable {
+    min-height: 300px;
+}
 
 
 </style>
