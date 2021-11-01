@@ -18,7 +18,7 @@
             <div class="card" style="padding:30px">
                 <div class="card-body">
                     <div class="row">
-                        <h4>문의게시판</h4>
+                        <h4>FAQ 자주묻는질문</h4>
                         <hr/>
                             
                         
@@ -36,29 +36,52 @@
                                 <thead>
                                     <tr>
                                     <th scope="col">번호</th>
-                                    <th scope="col">제목</th>
-                                    <th scope="col">작성자</th>
-                                    <th scope="col">날짜</th>
+                                    <th scope="col">내용</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                     <th scope="row">1</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>회원가입은 어떻게 하나요?</td>
                                     </tr>
                                     <tr>
                                     <th scope="row">2</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>회원 정보 수정은 어디서 하나요?</td>
                                     </tr>
                                     <tr>
                                     <th scope="row">3</th>
-                                    <td colspan="2"></td>
-                                    <td></td>
+                                    <td>회원 탈퇴는 어떻게 하나요?</td>
+                                    </tr> 
+                                    <tr>
+                                    <th scope="row">4</th>
+                                    <td>아이디가 기억나지 않아요.</td>
+                                    </tr> 
+                                    <tr>
+                                    <th scope="row">5</th>
+                                    <td>비밀번호가 기억나지 않아요.</td>
                                     </tr>
+                                    <tr>
+                                    <th scope="row">6</th>
+                                    <td>휴대전화 본인인증 인증번호가 오지 않아요.</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">7</th>
+                                    <td>간편 로그인 기능을 사용하고 싶어요. 소셜 로그인 계정(카카오)을 어떻게 연동할 수 있나요?</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">8</th>
+                                    <td>후기는 언제까지 작성할 수 있나요?</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">9</th>
+                                    <td>후기 댓글에 욕설이 있어요. 어떻게 해야 하나요?</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">10</th>
+                                    <td>	알림 설정(푸시)은 어떻게 하나요?</td>
+                                    </tr>
+
+    
                                 </tbody>
                                 </table>
                             </div>
@@ -100,5 +123,6 @@
 </script>
 
 <style scoped>
+
 
 </style>

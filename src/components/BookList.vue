@@ -5,9 +5,7 @@
                 <div style="width: 100%; height: 80%;">
                     <h1>지도</h1>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-primary">아니 왜 가운데 정렬이 안돼?</button>
-                </div>
+
             </div>
             <div class="col-md-5">
                 <div class="card" style="padding: 10px;">

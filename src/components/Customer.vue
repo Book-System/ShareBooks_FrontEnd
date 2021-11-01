@@ -10,7 +10,7 @@
                     <ul class="list-group">
                         <a href="./customer" class="list-group-item">문의하기</a>
                         <a href="./board" class="list-group-item">문의게시판</a>
-                        <a href="#" class="list-group-item">자주묻는질문</a>
+                        <a href="./Faq" class="list-group-item">자주묻는질문</a>
                     </ul>
                 </div>
         </div>
@@ -28,26 +28,6 @@
                         <td bgcolor=white>
                         <table class = "table2">
 
-                                <tr>
-                                <td>문의유형</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example">
-                                    <option selected>문의유형 선택</option>
-                                    <option value="1">교환</option>
-                                    <option value="2">환불</option>
-                                    <option value="3">취소</option>
-                                    <option value="4">배송</option>
-                                    <option value="5">A/S</option>
-                                    </select>
-                                </td>
-                                </tr>
-   
-
-                                <tr>
-                                <td>주문번호</td>
-                                <td><input type = text name = name size=60> </td>
-                                </tr>
-                                
                                 <tr>
                                 <td>작성자</td>
                                 <td><input type = text name = name size=60> </td>
@@ -71,7 +51,7 @@
                                 <tr>
                                 <td>내용</td>
 
-                                 <td><ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor></td>
+                                <td><ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor></td>
                                 </tr>
         
                                 </table>

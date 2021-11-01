@@ -11,51 +11,109 @@
                 <div>
                     <img src="../assets/logo.png" class="img-fluid rounded-start" alt="...">
                 </div>
+
                 <div>
-                    <h3>홈짐소개</h3>
-                    <div>
-                        <p>[도시뷰_인하우스 홈짐] 강남역 코앞, 분당 서현역에서 차로 20분</p>
-                        <p>예약 후 정확한 주소와 메시지가 전달됩니다.</p>
-                    </div>
-                    <div>
-                        <p>[내부 시설]</p>
-                        <p> 헬스장을 방문해보신 분들은 알겠지만, 렉이라는 물건이 있습니다. 여러가지 종류가 있지만 현재 홈짐에서 각광받는 렉 중하나인 미니렉을 가지고 있습니다. </p>
-                    </div>
-                    <div>
-                        <p>[지하철 + 택시]</p>
-                        <p> 헬스장을 방문해보신 분들은 알겠지만, 렉이라는 물건이 있습니다. 여러가지 종류가 있지만 현재 홈짐에서 각광받는 렉 중하나인 미니렉을 가지고 있습니다. </p>
-                    </div>
-                    <div>
-                        <p>[가격]</p>
-                        <p> 헬스장을 방문해보신 분들은 알겠지만, 렉이라는 물건이 있습니다. 여러가지 종류가 있지만 현재 홈짐에서 각광받는 렉 중하나인 미니렉을 가지고 있습니다. </p>
-                    </div>
-                    <div>
-                        <p>[시간]</p>
-                        <p> 헬스장을 방문해보신 분들은 알겠지만, 렉이라는 물건이 있습니다. 여러가지 종류가 있지만 현재 홈짐에서 각광받는 렉 중하나인 미니렉을 가지고 있습니다. </p>
-                    </div>
-                    <div>
-                        <p>[기타 보유 기구]</p>
-                        <p> 헬스장을 방문해보신 분들은 알겠지만, 렉이라는 물건이 있습니다. 여러가지 종류가 있지만 현재 홈짐에서 각광받는 렉 중하나인 미니렉을 가지고 있습니다. </p>
-                    </div>
-                </div>
-                <div>
-                    <h3>이용 가능한 시설들</h3>
-                    <div>
-                        <img src="../assets/logo.png" class="img-fluid rounded-start" alt="...">
-                        <p>주차가능</p>
-                    </div>
-                </div>
-                <div>
-                    <h3>빌려주는사람님의 홈짐위치</h3>
+                    <h3>빌려주는사람님과의 거래장소</h3>
                     <div>
                         <h1>지도데이터</h1>
+
                     </div>
                 </div>
+                <hr/>
                 <div>
-                    <h3>0개의 리뷰</h3><hr>
-                    <div>
-                        <h1>아직등록된 리뷰가 없습니다.</h1>
+
+                    <div class="review">
+                    <h3>3개의 리뷰</h3>
+                    <button type="button" class="btn btn-secondary" style="height:30px"><a href="./review">리뷰쓰기</a></button>
                     </div>
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="rating-block">
+                                    <h2 class="bold padding-bottom-7">4.5 <small>/ 5</small></h2>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="container">
+                        <div class="card" style="width:630px">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                                        <p class="text-secondary text-center">15 Minutes Ago</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                            <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
+                                            <div class="star-ratings">
+                                                <div class="star-ratings-fill space-x-2 text-lg"
+                                                :style="{ width: ratingToPercent + '%' }">
+                                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                                </div>
+                                                <div class="star-ratings-base space-x-2 text-lg">
+                                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                                </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width:630px">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                                        <p class="text-secondary text-center">15 Minutes Ago</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                            <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
+                                            <div class="star-ratings">
+                                                <div class="star-ratings-fill space-x-2 text-lg"
+                                                :style="{ width: ratingToPercent + '%' }">
+                                                    <span>★</span><span>★</span><span>★</span><span>★</span>
+                                                </div>
+                                                <div class="star-ratings-base space-x-2 text-lg">
+                                                    <span>★</span><span>★</span><span>★</span><span>★</span>
+                                                </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width:630px">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                                        <p class="text-secondary text-center">15 Minutes Ago</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                            <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
+                                            <div class="star-ratings">
+                                                <div class="star-ratings-fill space-x-2 text-lg"
+                                                :style="{ width: ratingToPercent + '%' }">
+                                                    <span>★</span><span>★</span><span>★</span>
+                                                </div>
+                                                <div class="star-ratings-base space-x-2 text-lg">
+                                                    <span>★</span><span>★</span><span>★</span>
+                                                </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+
+
                 </div>
             </div>
             <div class="col-md-5">
@@ -81,10 +139,73 @@
 
 <script>
     export default {
-        
+
+    ratingToPercent() {
+        const score = +this.restaurant.averageScore * 20;
+        return score + 1.5;
+    },
+    
     }
 </script>
 
 <style scoped>
+
+    .star-ratings {
+    color: #aaa9a9; 
+    position: relative;
+    unicode-bidi: bidi-override;
+    width: max-content;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.3px;
+    -webkit-text-stroke-color: #2b2a29;
+    }
+    
+    .star-ratings-fill {
+    color: #fff58c;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    -webkit-text-fill-color: gold;
+    }
+    
+    .star-ratings-base {
+    z-index: 0;
+    padding: 0;
+    }
+
+    .star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    justify-content: space-around;
+    padding: 0 0.2em;
+    text-align: center;
+    width: 5em;
+    }
+    
+    .star-rating input {
+    display: none;
+    }
+    
+
+    .review {
+        display: flex;
+        justify-content: space-between;
+    }
+
+a {
+    text-decoration:none;
+    color : #fff
+    }
+
+a:hover { 
+    text-decoration: none;
+    color : #fff
+}
 
 </style>
