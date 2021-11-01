@@ -15,14 +15,14 @@
           </span>
       </a>
 
-      <div class="col-sm-3 col-md-3">
+      <div id="search1" class="col-sm-3 col-md-3">
               <form class="navbar-form" role="search">
-              <div class="input-group">
-                  <input type="text" class="form-control" placeholder="지역 이름을 검색해보세요!" name="q">
-                  <div class="input-group-btn">
-                      <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                  </div>
-              </div>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="지역 이름을 검색해보세요!" name="q">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
               </form>
       </div>
 
@@ -43,5 +43,9 @@
 </script>
 
 <style scoped>
+
+  #search1 {
+    padding-right: 1px;
+  }
 
 </style>

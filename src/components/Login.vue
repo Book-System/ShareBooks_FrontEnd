@@ -9,27 +9,26 @@
 
           <h1 class="card-title">로그인</h1><br/>
 
-          <div>
+          <div class="center">
           <label>아이디</label>
-          <input type="text" class="form-control" placeholder="아이디를 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="아이디를 입력하세요" aria-label="Username" aria-describedby="basic-addon1" style="height: 35px;; width: 300px">
           </div>
 
           <br/>
 
-          <div>
+          <div class="center">
           <label>비밀번호</label>
-          <input type="text" class="form-control" placeholder="비밀번호를 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="비밀번호를 입력하세요" aria-label="Username" aria-describedby="basic-addon1" style="height: 35px;; width: 300px">
           </div>
 
           <br/>
 
           <div id="logincheck" class="d-grid gap-2">
-              <button class="btn1 btn-primary" type="button" style="height: 52px;">로그인</button>
+              <button class="btn1 btn-primary" type="button" style="height: 35px;; width: 300px">로그인</button>
           </div>
           <br/>
           <div class="kakao">            
-            <img src="../assets/kakao_login_medium_wide.png" style="height: 53px; width: auto;" @click="login()"/>
-            
+            <img src="../assets/kakao_login_medium_wide.png" style="height: 40px; width: 300px;" @click="login()"/>
           </div>
                   
           <br/>
@@ -63,6 +62,15 @@ export default {
 <style>
   .account {
     text-align: center;
+  }
+  .kakao {
+    padding-left: 30px;
+  }
+  #logincheck {
+    padding-left: 30px;
+  }
+  .center {
+    padding-left: 30px;
   }
 
 </style>
