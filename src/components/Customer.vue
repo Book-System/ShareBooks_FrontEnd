@@ -8,8 +8,8 @@
                   <h3 class="panel-title">고객센터</h3>
                 </div>
                     <ul class="list-group">
-                        <a href="#" class="list-group-item">문의하기</a>
-                        <a href="#" class="list-group-item">문의게시판</a>
+                        <a href="./customer" class="list-group-item">문의하기</a>
+                        <a href="./board" class="list-group-item">문의게시판</a>
                         <a href="#" class="list-group-item">자주묻는질문</a>
                     </ul>
                 </div>

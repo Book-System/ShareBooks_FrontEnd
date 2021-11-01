@@ -4,11 +4,11 @@
         <div class="col-md-3">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title">고객센터</h3>
+                    <h3 class="panel-title">고객센터</h3>
                 </div>
                     <ul class="list-group">
-                        <a href="#" class="list-group-item">문의하기</a>
-                        <a href="#" class="list-group-item">문의게시판</a>
+                        <a href="./customer" class="list-group-item">문의하기</a>
+                        <a href="./board" class="list-group-item">문의게시판</a>
                         <a href="#" class="list-group-item">자주묻는질문</a>
                     </ul>
                 </div>
@@ -21,38 +21,50 @@
                         <h4>문의게시판</h4>
                         <hr/>
                             
-                        <table class="table caption-top">
-                            <caption>List of users</caption>
-                            <thead>
-                                <tr>
-                                <th scope="col">번호</th>
-                                <th scope="col">제목</th>
-                                <th scope="col">작성자</th>
-                                <th scope="col">날짜</th>
-                                <th scope="col">조회</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        
+                        <section id="article-list-wrap" class="section-1 con-min-width">
+                            <div class="con">
+                                <div class="article-search">
+                                <form class="block">
+                                    <input type="text" @input="search" :value="searchKeyword"
+                                        placeholder="검색어" >
+                                </form>
+
+
+                                </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">작성자</th>
+                                    <th scope="col">날짜</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <th scope="row">1</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">2</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2"></td>
+                                    <td></td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                        
                     </div>
                 </div>
             </div>

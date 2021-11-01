@@ -51,7 +51,7 @@ export default {
   methods: {
     login() {
       window.location.replace(
-       "https://kauth.kakao.com/oauth/authorize?client_id=1369da4b522d2f4b32c277d58885eef0&redirect_uri=http://localhost:8080/join&response_type=code"
+      "https://kauth.kakao.com/oauth/authorize?client_id=1369da4b522d2f4b32c277d58885eef0&redirect_uri=http://localhost:8080/join&response_type=code"
       );
     },
   },
