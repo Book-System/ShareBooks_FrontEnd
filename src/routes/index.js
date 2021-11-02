@@ -21,6 +21,7 @@ import Customer from '@/components/Customer.vue';
 import Board from '@/components/Board.vue';
 import Faq from '@/components/Faq.vue';
 import Review from '@/components/Review.vue';
+import BoardDetail from '@/components/BoardDetail.vue';
 
 const routes = [
     { path: '/', name: 'Home', component:Home },
@@ -44,6 +45,7 @@ const routes = [
     { path: '/Board', name: 'Board', component: Board},
     { path: '/Faq', name: 'Faq', component: Faq},
     { path: '/Review', name: 'Review', component: Review},
+    { path: '/BoardDetail', name: 'BoardDetail', component: BoardDetail},
 ];
 
 const router = createRouter({
