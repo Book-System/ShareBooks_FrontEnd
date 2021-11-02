@@ -11,9 +11,10 @@
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
   <script>
     //	257c607c24f7d50242038cd2effa3765
-    window.Kakao.init("257c607c24f7d50242038cd2effa3765");
+    
 
     function kakaoLogin() {
+      window.Kakao.init("257c607c24f7d50242038cd2effa3765");
       window.Kakao.Auth.login({
         scope:'profile_nickname, profile_image, account_email, gender',
         success : function(authObj) {
@@ -22,6 +23,9 @@
             url : '/v2/user/me',
             success : res => {
               const kakao_account = res.kakao_account;
+              console.log("========================");
+              console.log(res);
+              console.log("========================");
               console.log(kakao_account);
             }
           });
