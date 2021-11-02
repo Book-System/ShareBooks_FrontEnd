@@ -160,7 +160,7 @@
 }
 
 .myMsg > .msg {
-    background-color: #0084FF;
+    background-color: #f0d1e3;
     color: #fff;
 }
 
