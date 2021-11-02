@@ -42,8 +42,16 @@
                                 <tbody>
                                     <tr>
                                     <th scope="row">1</th>
-                                    <td>회원가입은 어떻게 하나요?</td>
+                                    <td @click="handle_faq">회원가입은 어떻게 하나요?</td>
+
+                                    <div v-show="faq_show">
+                                            <td class="faq_q">답변</td>
+                                            <td class="faq_a">
+                                                <p>출고 처리 중부터는 주문 정보 변경이 불가능합니다. 입금 확인 상태에서는 <strong><a href="https://bizest.musinsa.com/app/mypage" target="_blank"><span style="color:#3498db;">[주문내역 조회]</span></a></strong>에서 배송지를 변경할 수 있습니다.</p>
+                                            </td>
+                                        </div>
                                     </tr>
+
                                     <tr>
                                     <th scope="row">2</th>
                                     <td>회원 정보 수정은 어디서 하나요?</td>
@@ -118,7 +126,17 @@
 
 <script>
     export default {
-        
+         name: 'App',
+        data: () => {
+            return {
+                faq_show : false
+            }
+        },
+        methods: {
+            handle_faq() {
+                this.is_show = !this.is_show;
+            },
+        },
     }
 </script>
 
