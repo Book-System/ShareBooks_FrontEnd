@@ -22,6 +22,7 @@ import Board from '@/components/Board.vue';
 import Faq from '@/components/Faq.vue';
 import Review from '@/components/Review.vue';
 import BoardDetail from '@/components/BoardDetail.vue';
+import Home2 from '@/components/Home2.vue';
 
 const routes = [
     { path: '/', name: 'Home', component:Home },
@@ -46,6 +47,7 @@ const routes = [
     { path: '/Faq', name: 'Faq', component: Faq},
     { path: '/Review', name: 'Review', component: Review},
     { path: '/BoardDetail', name: 'BoardDetail', component: BoardDetail},
+    { path: '/home2', name: 'Home2', component:Home2 },
 ];
 
 const router = createRouter({
