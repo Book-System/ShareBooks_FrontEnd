@@ -25,7 +25,7 @@ import BoardDetail from '@/components/BoardDetail.vue';
 import Home2 from '@/components/Home2.vue';
 
 const routes = [
-    { path: '/', name: 'Home', component:Home },
+    { path: '/home', name: 'Home', component:Home },
     { path: '/header2', name: 'Header2', component:Header2 },
     { path: '/login', name: 'Login', component: Login},
     { path: '/join', name: 'Join', component: Join},
@@ -47,7 +47,7 @@ const routes = [
     { path: '/Faq', name: 'Faq', component: Faq},
     { path: '/Review', name: 'Review', component: Review},
     { path: '/BoardDetail', name: 'BoardDetail', component: BoardDetail},
-    { path: '/home2', name: 'Home2', component:Home2 },
+    { path: '/', name: 'Home2', component:Home2 },
 ];
 
 const router = createRouter({

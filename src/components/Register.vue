@@ -39,17 +39,15 @@
 
           <label>주소</label>
           <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-6">
               <input type="text" class="form-control" v-model="postcode" placeholder="우편번호" aria-label="Username" aria-describedby="basic-addon1">
             </div>
             <div class="col-sm-4 d-grid gap-2 d-md-block">
               <input type="button" class="btn1 btn-primary" @click="execDaumPostcode()" value="우편번호 찾기"><br/>
             </div>
             <div class="col-sm-8">
-              <input type="text" v-model="address" placeholder="주소"><br>
-              <input type="text" v-model="detailAddress" placeholder="상세주소">
-              <input type="text" v-model="extraAddress" placeholder="참고항목">
-              </div>
+              <input type="text" class="form-control" v-model="address" placeholder="주소" aria-label="Username" aria-describedby="basic-addon1"><br>
+            </div>
           </div>
 
           <br/>
