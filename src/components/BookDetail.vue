@@ -30,7 +30,7 @@
                                 <div class="allcontainer">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-md-6 card">
+                                            <div class="col-md-6 card" id="allreview">
                                                 <div id="card1" class="card-body">
                                                     <label>리뷰쓰기</label>
                                                     <div class="star-rating space-x-4">
@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="container">
-                    <div class="card" style="width:630px">
+                    <div class="card" style="width:600px">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2">
@@ -104,7 +104,7 @@
                         </div>
                     </div>
 
-                    <div class="card" style="width:630px">
+                    <div class="card" style="width:600px">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2">
@@ -128,7 +128,7 @@
                         </div>
                     </div>
 
-                    <div class="card" style="width:630px">
+                    <div class="card" style="width:600px">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2">
@@ -167,7 +167,7 @@
                             </div>
                             <div style="text-align:right;">
                                 <p>1회 이용가격</p>
-                                <p>5,000원</p>
+                                <p>500,000,000,원</p>
                             </div>
                             <button type="button" class="col-md-6 btn btn-primary">수정 및 삭제하기</button>
                         </div>
@@ -237,6 +237,7 @@
 </script>
 
 <style scoped>
+
     .star-ratings {
         color: #aaa9a9;
         position: relative;
@@ -297,7 +298,7 @@
     }
 
 
-
+ 
 
 
 
