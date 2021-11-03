@@ -11,7 +11,7 @@
                      around you
                 </div>
                 <div class="main-text-btn">
-                  <a href="#" class="myButton">Take a look</a>
+                  <a href="./BookList2" class="myButton">Take a look</a>
                 </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                    Unused Books
                 </div>
                 <div class="main-text-btn">
-                  <a href="#" class="myButton">Register</a>
+                  <a href="./Register" class="myButton">Register</a>
                 </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                    Month
                 </div>
                 <div class="main-text-btn">
-                  <a href="#" class="myButton">Recommend</a>
+                  <a href="./Slider2" class="myButton">Recommend</a>
                 </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                      By Chat
                 </div>
                 <div class="main-text-btn">
-                  <a href="#" class="myButton">Reservation</a>
+                  <a href="./Reserve" class="myButton">Reservation</a>
                 </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
                 </div>
               
                 <div class="main-text-btn">
-                  <a href="#" class="myButton">Please Join</a>
+                  <a href="./Join" class="myButton">Please Join</a>
                 </div>
                 </div>
             </div>
