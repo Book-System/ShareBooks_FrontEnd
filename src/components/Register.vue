@@ -55,7 +55,8 @@
           <label>대여료</label>
           <div class="row">
             <div class="col-sm-8">
-              <input type="text" class="form-control" placeholder="가격을 입력하세요"  aria-describedby="basic-addon1">
+               
+              <input type="text"  id="price" v-model="value" @input="e=>value=changeNum(e.target.value)" class="form-control" placeholder="가격을 숫자로만 입력하세요" >
             </div>
           </div>
           <br/>
@@ -150,6 +151,7 @@ export default {
       postcode: "",
       address: "",
       extraAddress: "",
+      value:"",
     };
   },
   methods: {
@@ -193,7 +195,24 @@ export default {
         },
       }).open();
     },
+     changeNum : function(value) {
+          return value = this.comma(this.uncomma(value));
+        },
+       comma(str) {
+           str = String(str);
+           return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+       },
+      uncomma(str) {
+         str = String(str);
+         return str.replace(/[^\d]+/g, '');
+     }
   },
+   filters:{
+        inputNumberFormat(val){
+            return String(val).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+    } 
+  
 };
 </script>
 
