@@ -15,7 +15,7 @@
 
           <div>
           <label>글제목</label>
-          <input type="text" class="form-control" placeholder="글제목을 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="글제목을 입력하세요"  aria-describedby="basic-addon1">
           </div>
           <br/>
 
@@ -27,35 +27,42 @@
 
            <div>
           <label>책제목</label>
-          <input type="text" class="form-control" placeholder="등록할 책 제목을 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="등록할 책 제목을 입력하세요"  aria-describedby="basic-addon1">
           </div>
           <br/>
 
            <div>
           <label>책내용</label>
-          <input type="text" class="form-control" placeholder="책에 대해 소개해주세요" aria-label="Username" aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="책에 대해 소개해주세요"  aria-describedby="basic-addon1">
           </div>
           <br/>
 
           <label>주소</label>
           <div class="row">
             <div class="col-sm-6">
-              <input type="text" class="form-control" v-model="postcode" placeholder="우편번호" aria-label="Username" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" v-model="postcode" placeholder="우편번호" aria-describedby="basic-addon1">
             </div>
             <div class="col-sm-4 d-grid gap-2 d-md-block">
               <input type="button" class="btn1 btn-primary" @click="execDaumPostcode()" value="우편번호 찾기"><br/>
             </div>
             <div class="col-sm-8">
-              <input type="text" class="form-control" v-model="address" placeholder="주소" aria-label="Username" aria-describedby="basic-addon1"><br>
+              <input type="text" class="form-control" v-model="address" placeholder="주소"  aria-describedby="basic-addon1"><br>
             </div>
           </div>
 
-          <br/>
+          
 
           <label>대여료</label>
           <div class="row">
             <div class="col-sm-8">
-              <input type="text" class="form-control" placeholder="가격을 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" placeholder="가격을 입력하세요"  aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <br/>
+            <label>#키워드</label>
+          <div class="row">
+            <div class="col-sm-8">
+              <input type="text" class="form-control" placeholder="키워드를 입력하세요(ex: #따듯한,#슬픔)"  aria-describedby="basic-addon1">
             </div>
           </div>
           <br/>
@@ -103,6 +110,8 @@
               카테고리6
             </label>
             </div>
+
+            
 
             
             
