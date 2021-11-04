@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        
         <div class="row g-0">
             <div class="col-md-7" style="background-color: #eee; text-align: center; ">
                 <div style="width: 100%; height: 80%;">

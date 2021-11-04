@@ -14,7 +14,7 @@
                 </div>
         </div>
 
-            <div class="col-md-9">
+            <div class="col-md-8">
             <div class="card" style="padding:30px">
                 <div class="card-body">
                     <div class="row">
@@ -40,6 +40,7 @@
                               </tr>
                               <tr>
                                 <th>이미지</th>
+                                <td><img src="../assets/images/default.jpg" onerror="this.src='../assets/images/default.jpg'" style="width:200px; height:200px"></td>
                               </tr>
                             </table>
                           </form>

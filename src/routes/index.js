@@ -4,6 +4,7 @@ import Login from '@/components/Login.vue';
 import Home from '@/components/Home.vue';
 import Header2 from '@/components/Header2.vue';
 import Join from '@/components/Join.vue';
+import Join2 from '@/components/Join2.vue';
 import Mypage from '@/components/Mypage.vue';
 import Myactive from '@/components/Myactive.vue';
 import Updatemypage from '@/components/Updatemypage.vue';
@@ -23,12 +24,16 @@ import Faq from '@/components/Faq.vue';
 import Review from '@/components/Review.vue';
 import BoardDetail from '@/components/BoardDetail.vue';
 import Home2 from '@/components/Home2.vue';
+import Header3 from '@/components/Header3.vue';
+import Footer2 from '@/components/Footer2.vue';
+
 
 const routes = [
     { path: '/home', name: 'Home', component:Home },
     { path: '/header2', name: 'Header2', component:Header2 },
     { path: '/login', name: 'Login', component: Login},
     { path: '/join', name: 'Join', component: Join},
+    { path: '/Join2', name: 'Join2', component: Join2},
     { path: '/mypage', name: 'Mypage', component: Mypage},
     { path: '/myactive', name: 'Myactive', component: Myactive},
     { path: '/Updatemypage', name: 'Updatemypage', component: Updatemypage},
@@ -48,6 +53,8 @@ const routes = [
     { path: '/Review', name: 'Review', component: Review},
     { path: '/BoardDetail', name: 'BoardDetail', component: BoardDetail},
     { path: '/', name: 'Home2', component:Home2 },
+    { path: '/Header3', name: 'Header3', component:Header3 },
+    { path: '/Footer2', name: 'Footer2', component:Footer2 },
 ];
 
 const router = createRouter({

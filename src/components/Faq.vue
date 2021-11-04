@@ -40,7 +40,7 @@
                                                             </button>
                                                         </div>
                                                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                                            <div class="accordion-body">제발 되라!!!</div>
+                                                            <div class="accordion-body">회원가입은 2가지 방법으로 가능합니다.<br/><br/>1. 일반 가입 - 회원 정보 입력 및 약관 동의 후 가입이 가능합니다.<br/><br/>2. 카카오 계정을 통한 가입</div>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -56,7 +56,7 @@
                                                             </button>
                                                         </div>
                                                         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                                            <div class="accordion-body">와아아아</div>
+                                                            <div class="accordion-body">마이 페이지 > 내 정보수정에서 변경할 수 있습니다. </div>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -68,11 +68,11 @@
                                                     <div>
                                                         <div class="accordion-header" id="flush-headingThree">
                                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                                회원 탈퇴는 어떻게 하나요?
+                                                                개인 정보는 안전하게 보호되나요?
                                                             </button>
                                                         </div>
                                                         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                                            <div class="accordion-body">와아아아</div>
+                                                            <div class="accordion-body">주민등록번호나 카드번호 등의 개인 중요 정보를 서버에 저장하지 않으며, 최소한의 정보만을 받고 있습니다.</div>
                                                         </div>
                                                     </div>
                                                 </td>

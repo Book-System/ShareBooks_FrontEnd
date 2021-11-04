@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col">
     </div>
-      <div class="col card" style="width: 50rem; height: 50rem">
+      <div class="col card" style="width: 50rem; height: 47rem">
         <div class="card-body">
 
           <h1 class="card-title">로그인</h1><br/>
@@ -37,8 +37,10 @@
           <br/>
 
               <div class="account">
-                계정이 없으신가요?
-                <a href="./Join">회원가입 하기</a>
+                <a href="#">아이디 찾기</a> |
+                <a href="#">비밀번호 찾기</a> |
+                <a href="./Join">회원가입</a>
+                
               </div>
 
         </div>
@@ -76,5 +78,4 @@ export default {
     border:none;
     
   }
-
 </style>

@@ -47,7 +47,17 @@
     padding-right: 1px;
   }
 
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+  }
 
-
+  body {
+    padding-top:75px;
+  }
 
 </style>

@@ -158,18 +158,18 @@
             </div>
 
             <div class="col-md-5">
-                <div class="card" style="padding: 20px;">
+                <div class="card" id="viewcard">
                     <div class="row g-0">
                         <div class="col-md-12">
                             <div style="text-align:center;">
                                 <p>빌려주는 사람님의 홈짐</p>
-                                <p>"서울 강남구 가로수길 5"<br>에 위치한 홈짐입니다.</p>
+                                <p>"서울 강남구 가로수길 5"<br>에 위치한 홈짐입니다.</p><br/>
                             </div>
                             <div style="text-align:right;">
                                 <p>1회 이용가격</p>
-                                <p>500,000,000,원</p>
+                                <h4>5000원</h4>
                             </div>
-                            <button type="button" class="col-md-6 btn btn-primary">수정 및 삭제하기</button>
+                            <button type="button" class="btn btn-primary">수정 및 삭제하기</button>
                         </div>
                     </div>
                 </div>
@@ -298,12 +298,6 @@
     }
 
 
- 
-
-
-
-
-
 
     .star-rating label {
         -webkit-text-fill-color: transparent;
@@ -370,5 +364,14 @@
 
     .star-rating input {
         display: none;
+    }
+
+    #viewcard {
+        padding: 20px;
+        display: inline-block;
+        position: sticky;
+        top: 80px;
+        width: 350px;
+        height: 250px;
     }
 </style>
