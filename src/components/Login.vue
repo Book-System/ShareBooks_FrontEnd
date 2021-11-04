@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col">
     </div>
-      <div class="col card" style="width: 50rem; height: 47rem">
+      <div class="col card" style="width: 50rem; height: 35rem">
         <div class="card-body">
 
           <h1 class="card-title">로그인</h1><br/>
@@ -42,8 +42,8 @@
                 <a href="./Join">회원가입</a>
                 
               </div>
-
         </div>
+        
       </div>
         <div class="col">
         </div>

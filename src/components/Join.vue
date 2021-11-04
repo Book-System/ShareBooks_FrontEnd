@@ -73,11 +73,15 @@
             </div>
 
         </div>
+        
       </div>
+
         <div class="col" style="width: 100rem;">
         </div>
+        
   </div>
 </div>
+
 </template>
 
 <script>
@@ -141,6 +145,10 @@ export default {
 
 #joinbtn {
   padding-left: 150px;
+}
+
+body {
+  padding-top: 100px;
 }
 
 </style>
