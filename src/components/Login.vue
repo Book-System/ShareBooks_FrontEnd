@@ -59,11 +59,10 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
   .account {
     text-align: center;
   }
-
   .custom-btn-primary{
     background-color :transparent;
     background-image :url("../assets/kakao_login_medium_wide.png");
@@ -73,6 +72,3 @@ export default {
     border:none;
     
   }
-
-
-</style>

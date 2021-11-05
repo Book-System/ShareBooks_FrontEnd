@@ -142,10 +142,8 @@ export default {
 #join {
   padding-right: 50px;
 }
-
 #joinbtn {
   padding-left: 150px;
 }
-
 
 </style>

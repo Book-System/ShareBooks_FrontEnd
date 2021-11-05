@@ -9,8 +9,9 @@
   <main>
     <router-view></router-view>
   </main>
-  <footer style="background-color: #ECE2E1; height:10%">
-    <Footer>
+
+  <footer style=" background-color: #ECE2E1;" >
+    <Footer >
     </Footer>
   </footer>
 
@@ -50,5 +51,7 @@ footer {
 * {
   font-family: 'Jua', sans-serif;
 }
+
+
 
 </style>
