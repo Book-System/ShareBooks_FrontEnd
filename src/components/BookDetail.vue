@@ -1,27 +1,126 @@
 <template>
     <div class="container">
         <div class="row g-0">
-            <div class="col-md-7" style="background-color: #eee;">
-                
-                <!-- <vueper-slides ref="vueperslides1" :touchable="false" fade :autoplay="false" :bullets="false" @slide="$refs.vueperslides2.goToSlide($event.currentSlide.index, { emit: false })" fixed-height="400px">
-                    <vueper-slide v-for="(slide, i) in this.slides" :key="i" :image="slide.image"> </vueper-slide>
-                   
-                </vueper-slides>
-
-                <vueper-slides class="no-shadow thumbnails" ref="vueperslides2" @slide="$refs.vueperslides1.goToSlide($event.currentSlide.index, { emit: false })" :visible-slides="slides.length" fixed-height="75px" :bullets="false" :touchable="false" :gap="2.5" :arrows="false">
-                    <vueper-slide v-for="(slide, i) in this.slides" :key="i" :image="slide.image" @click="$refs.vueperslides2.goToSlide(i)">
-                    </vueper-slide>
-                </vueper-slides> -->
-
+            <div class="col-md-7">
+                <!-- 판매 기본 정보 --> 
                 <div>
-                    <h3>빌려주는사람님과의 거래장소</h3>
+                    <!-- 메인 이미지 및 서브 이미지 -->
                     <div>
-                        <div id="map" style="width:100%;height:300px;"></div>
+                        <vueper-slides ref="vueperslides1" :touchable="false" fade :autoplay="false" :bullets="false" @slide="$refs.vueperslides2.goToSlide($event.currentSlide.index, { emit: false })" fixed-height="400px">
+                            <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image">
+                            </vueper-slide>
+                        </vueper-slides>
+
+                        <vueper-slides class="no-shadow thumbnails" ref="vueperslides2" @slide="$refs.vueperslides1.goToSlide($event.currentSlide.index, { emit: false })" :visible-slides="slides.length" fixed-height="75px" :bullets="false" :touchable="false" :gap="2.5" :arrows="false">
+                            <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" @click="$refs.vueperslides2.goToSlide(i)">
+                            </vueper-slide>
+                        </vueper-slides>
+                    </div><br><br>
+
+                    <!-- 판매 제목 & 판매 내용 -->
+                    <div>
+                        <h3>[대연동] 인간실격 책 대여해드립니다.</h3>
+                        <div>
+                            <textarea class="autosize" readonly style="width:100%; height: 250px; border:0; overflow:hidden; pointer-events: none">
+[상태 완전 좋은 인간실격 책]              
+예약 후, 정확한 주소와 메시지가 전달됩니다.
+
+[감상평]
+헬스장을 방문해 보신 분들은 알겠지만, 렉이라는 물건이 있습니다. 여러 가지 종류가 있지만 현재 홈짐에서 각광받는 렉 중 하나인 미니렉을 보유하고 있습니다. 기본적으로 3대 운동을 수행할 수 있고 바벨로 할 수 있는 운동들도 굉장히 많기 때문에 미니 렉 하나만 구비하신다면 앞서 말한 공간에서 충분히 근력운동을 할 수 있습니다.!
+                            </textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- 거래 장소 --> 
+                    <div>
+                        <h3>빌려주는사람님과의 거래장소</h3>
+                        <div>
+                            <div id="map" style="width:100%;height:300px;"></div>
+                        </div>
+                    </div><br><br>
+
+                    <!-- 책 정보 -->
+                    <div>
+                        <h3>책정보</h3>
+                        <div style="display: flex; justify-content: space-between; text-align: center;">
+                            <div style="width: 35%">
+                                <img src="../assets/images/neighbor.png" alt="이미지" style="width: 100%; height: 100%">
+                            </div>
+                            <div style="width: 65%; text-align: left; margin-left: 20px;">
+                                <p>인간실격 / 스릴러</p>
+                                <p>인간의 나약함을 탁월하게 묘사하는 다자이 오사무의 작품을 새롭게 읽는다. 순수하고 여린 심성의 젊은이가 인간 사회의 위선과 잔혹성을 견디지 못하고 파멸되어 가는 과정을 그린 소설로, 어느 세계에도 속하지 못한 채 인간 실격자로 전락한 주인공의 내면을 치밀한 심리묘사로 기록하였다. 다자이 작품 속의 타락과 자기파괴적 언행은 제2차 세계대전에서 패망한 후 공황상태에 빠진 일본 젊은이들의 의식을 반영하고 있다.</p>
+                            </div>
+                        </div>
+                    </div><br><br>
+
+                    <!-- 태그 정보 -->
+                    <div>
+                        <h3>태그정보</h3>
+                        <div>
+                            <p>#고구마 #감자 #부아이스 #인간실격</p>
+                        </div>
                     </div>
                 </div>
                 <hr />
-                <div>
 
+                <!-- 리뷰 정보 -->
+                <div>
+                    <!-- 개선본 -->
+                    <div>
+                        <!-- 리뷰 개수 & 리뷰 쓰기 -->
+                        <div>
+                            <div style="display: flex; justify-content: space-between; text-align: center;">
+                                <div>
+                                    <h3 style="display: inline">3개의 리뷰</h3>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-secondary" style="height: 30px" @click="handle_toggle">리뷰쓰기</button>
+                                </div>
+                            </div><br>
+                            <div v-if="is_show">
+                                <div class="allcontainer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 card" id="allreview">
+                                                <div class="card-body">
+                                                    <label>리뷰쓰기</label>
+                                                    <div class="star-rating space-x-4">
+                                                        <input type="radio" id="5-stars" name="rating" value="5" v-model="ratings" />
+                                                        <label for="5-stars" class="star pr-4">★</label>
+                                                        <input type="radio" id="4-stars" name="rating" value="4" v-model="ratings" />
+                                                        <label for="4-stars" class="star">★</label>
+                                                        <input type="radio" id="3-stars" name="rating" value="3" v-model="ratings" />
+                                                        <label for="3-stars" class="star">★</label>
+                                                        <input type="radio" id="2-stars" name="rating" value="2" v-model="ratings" />
+                                                        <label for="2-stars" class="star">★</label>
+                                                        <input type="radio" id="1-star" name="rating" value="1" v-model="ratings" />
+                                                        <label for="1-star" class="star">★</label>
+                                                    </div>
+
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" placeholder="호스트에게 요청할 사항을 입력하세요" id="floatingTextarea2" style="height: 100px"></textarea>
+                                                    </div>
+                                                    <br />
+
+                                                    <div class="text-right">
+                                                        <div class="stars starrr" data-rating="0"></div>
+                                                        <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;"></a>
+                                                        <!-- <button id="cancel" class="btn btn-danger" type="submit">cancel</button> -->
+                                                        <button class="btn btn-success btn-lg" type="submit">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 원본 -->
                     <div class="review">
                         <div id="app">
                             <h3 style="display: inline-block">3개의 리뷰</h3>
@@ -154,11 +253,9 @@
                     </div>
                 </div>
                 <br />
-
-
             </div>
 
-            <div class="col-md-5">
+            <div class="col-md-4" style="margin-left: 20px;">
                 <div class="card" id="viewcard">
                     <div class="row g-0">
                         <div class="col-md-12">
@@ -180,20 +277,24 @@
 </template>
 
 <script>
+    import {
+        VueperSlides,
+        VueperSlide
+    } from 'vueperslides'
+    import 'vueperslides/dist/vueperslides.css'
     export default {
+        components: {
+            VueperSlides,
+            VueperSlide
+        },
         name: 'App',
-        data() { 
+        data() {
             return {
-                // slides: [{
-                //     image: require('@/assets/images/el-teide-volcano-spain.jpg')
-                // },
-                // {
-                //     image: require('@/assets/images/chernobyl-ukraine.jpg')
-                // },
-                // {
-                //     image: require('@/assets/images/crater-lake-oregon-usa.jpg')
-                // }
-                // ],
+                slides: [
+                    { image: require('@/assets/images/chatting2.png') },
+                    { image: require('@/assets/images/default.jpg') },
+                    { image: require('@/assets/images/analyzing.png') }
+                ],
                 is_show: false,
                 map: null,
                 markerPositions1: [
@@ -237,7 +338,7 @@
                     level: 5,
                 };
                 this.map = new kakao.maps.Map(container, options);
-            }
+            },
         },
         ratingToPercent() {
             const score = +this.restaurant.averageScore * 20;

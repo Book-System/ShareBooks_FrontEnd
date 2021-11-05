@@ -40,7 +40,7 @@
                               </tr>
                               <tr>
                                 <th>이미지</th>
-                                <td><img src="../assets/images/default.jpg" onerror="this.src='../assets/images/default.jpg'" style="width:200px; height:200px"></td>
+                                <!-- <td><img src="../assets/images/default.jpg" onerror="this.src='../assets/images/default.jpg'" style="width:200px; height:200px"></td> -->
                               </tr>
                             </table>
                           </form>

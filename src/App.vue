@@ -44,11 +44,6 @@ export default {
     padding-top:200px;
     padding-bottom: 100px;
   } */
-footer {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 * {
   font-family: 'Jua', sans-serif;
 }

@@ -19,9 +19,8 @@
             <label>비밀번호</label>
             <input type="text" class="form-control" placeholder="비밀번호를 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
             </div>
-
             <br/>
-
+            
             <div id="logincheck" class="d-grid gap-2">
                 <button class="btn btn-primary" type="button" style="height: 52px; margin: 0 auto; width:100%">로그인</button>
             </div>
@@ -33,11 +32,12 @@
                     
             <br/>
  
-                <div class="account">
+
+              <div class="account">
                   <a href="#">아이디 찾기</a> |
-                  <a href="#">비밀번호 찾기</a> |
-                  <a href="./Join">회원가입</a> 
-                </div>
+                  <a href="#">비밀번호 찾기</a><br/>
+                  계정이 없으신가요? <a href="./Join">회원가입</a> 
+              </div>
           </div>
         </div>
           <div class="col">
