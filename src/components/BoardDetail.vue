@@ -65,4 +65,8 @@
 	.tbAdd td{padding:10px 10px; box-sizing:border-box; text-align:left;}
 	.tbAdd td.txt_cont{height:300px; vertical-align:top;}
 
+  .container{
+    padding-top:20px;
+    padding-bottom:100px;    
+  }
 </style>

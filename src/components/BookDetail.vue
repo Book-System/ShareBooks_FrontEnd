@@ -81,7 +81,7 @@
                                 <div class="allcontainer">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-md-12 card" id="allreview">
+                                            <div class="col-md-12 card">
                                                 <div class="card-body">
                                                     <label>리뷰쓰기</label>
                                                     <div class="star-rating space-x-4">
@@ -98,15 +98,14 @@
                                                     </div>
 
                                                     <div class="form-floating">
-                                                        <textarea class="form-control" placeholder="호스트에게 요청할 사항을 입력하세요" id="floatingTextarea2" style="height: 100px"></textarea>
+                                                        <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
                                                     </div>
                                                     <br />
 
                                                     <div class="text-right">
                                                         <div class="stars starrr" data-rating="0"></div>
                                                         <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;"></a>
-                                                        <!-- <button id="cancel" class="btn btn-danger" type="submit">cancel</button> -->
-                                                        <button class="btn btn-success btn-lg" type="submit">Save</button>
+                                                        <button class="btn btn-success btn-lg" type="submit">댓글쓰기</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -116,60 +115,12 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 원본 -->
-                    <div class="review">
-                        <div id="app">
-                            <h3 style="display: inline-block">3개의 리뷰</h3>
-                            <button type="button" class="btn btn-secondary" style="height:30px" @click="handle_toggle">리뷰쓰기</button>
-                            <!-- <button @click="handle_toggle" type="button">리뷰쓰기</button> -->
-                            <div v-show="is_show">
-                                <div class="allcontainer">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-6 card" id="allreview">
-                                                <div id="card1" class="card-body">
-                                                    <label>리뷰쓰기</label>
-                                                    <div class="star-rating space-x-4">
-                                                        <input type="radio" id="5-stars" name="rating" value="5" v-model="ratings" />
-                                                        <label for="5-stars" class="star pr-4">★</label>
-                                                        <input type="radio" id="4-stars" name="rating" value="4" v-model="ratings" />
-                                                        <label for="4-stars" class="star">★</label>
-                                                        <input type="radio" id="3-stars" name="rating" value="3" v-model="ratings" />
-                                                        <label for="3-stars" class="star">★</label>
-                                                        <input type="radio" id="2-stars" name="rating" value="2" v-model="ratings" />
-                                                        <label for="2-stars" class="star">★</label>
-                                                        <input type="radio" id="1-star" name="rating" value="1" v-model="ratings" />
-                                                        <label for="1-star" class="star">★</label>
-                                                    </div>
-
-                                                    <div class="form-floating">
-                                                        <textarea class="form-control" placeholder="호스트에게 요청할 사항을 입력하세요" id="floatingTextarea2" style="height: 100px"></textarea>
-                                                    </div>
-                                                    <br />
-
-                                                    <div class="text-right">
-                                                        <div class="stars starrr" data-rating="0"></div>
-                                                        <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;"></a>
-                                                        <!-- <button id="cancel" class="btn btn-danger" type="submit">cancel</button> -->
-                                                        <button class="btn btn-success btn-lg" type="submit">Save</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
+
+
 
                 <div class="row">
                     <div class="col-sm-3">
@@ -180,15 +131,15 @@
                 </div>
 
                 <div class="container">
-                    <div class="card" style="width:600px">
+                    <div class="card" style="width:750px">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2">
                                     <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-                                    <p class="text-secondary text-center">15 Minutes Ago</p>
+                                    <!-- <p class="text-secondary text-center">15 Minutes Ago</p> -->
                                 </div>
                                 <div class="col-md-10">
-                                    <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
+                                    <a class="float-left" href="#"><strong>뭘봐</strong></a>
                                     <div class="star-ratings">
                                         <div class="star-ratings-fill space-x-2 text-lg" :style="{ width: ratingToPercent + '%' }">
                                             <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -198,21 +149,21 @@
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>
-                                    <p>Lorem Ipsum is simply dummy text of the pr make but also the leap into electronic typesetting</p>
+                                    <p>책 너무 잘읽었어요~~</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card" style="width:600px">
+                    <div class="card" style="width:750px">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2">
                                     <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-                                    <p class="text-secondary text-center">15 Minutes Ago</p>
+                                    <!-- <p class="text-secondary text-center">15 Minutes Ago</p> -->
                                 </div>
                                 <div class="col-md-10">
-                                    <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
+                                    <a class="float-left" href="#"><strong>히힣</strong></a>
                                     <div class="star-ratings">
                                         <div class="star-ratings-fill space-x-2 text-lg" :style="{ width: ratingToPercent + '%' }">
                                             <span>★</span><span>★</span><span>★</span><span>★</span>
@@ -222,21 +173,21 @@
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>
-                                    <p>Lorem Ipsum is simply dummy text of the pr make but also the leap into electronic typesetting</p>
+                                    <p>나름 ㄱㅊㄱㅊ</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card" style="width:600px">
+                    <div class="card" style="width:750px">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2">
                                     <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-                                    <p class="text-secondary text-center">15 Minutes Ago</p>
+                                    <!-- <p class="text-secondary text-center">15 Minutes Ago</p> -->
                                 </div>
                                 <div class="col-md-10">
-                                    <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
+                                    <a class="float-left" href="#"><strong>바부</strong></a>
                                     <div class="star-ratings">
                                         <div class="star-ratings-fill space-x-2 text-lg" :style="{ width: ratingToPercent + '%' }">
                                             <span>★</span><span>★</span><span>★</span>
@@ -246,7 +197,7 @@
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>
-                                    <p>Lorem Ipsum is simply dummy text of the pr make but also the leap into electronic typesetting</p>
+                                    <p>잘빌렸음 책 좀 더러움</p>
                                 </div>
                             </div>
                         </div>
@@ -264,10 +215,9 @@
                                 <p>"서울 강남구 가로수길 5"<br>에 위치한 홈짐입니다.</p><br />
                             </div>
                             <div style="text-align:right;">
-                                <p>1회 이용가격</p>
                                 <h4>5000원</h4>
                             </div>
-                            <button type="button" class="btn btn-primary">수정 및 삭제하기</button>
+                            <button type="button" class="btn btn-primary" style="margin-left:90px">수정 및 삭제하기</button>
                         </div>
                     </div>
                 </div>
@@ -399,7 +349,7 @@
 
     a {
         text-decoration: none;
-        color: #fff
+        color: #000;
     }
 
     a:hover {

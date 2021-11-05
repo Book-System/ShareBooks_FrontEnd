@@ -201,5 +201,8 @@
     /* padding-top: 10px; */
     display: flex;
     justify-content: space-evenly;
+    padding-top:20px;
+    padding-bottom:50px;  
 }
+
 </style>

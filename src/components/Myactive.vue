@@ -14,18 +14,11 @@
                         <a href="./Updatemypage" class="list-group-item">내 정보수정</a>
                         <a href="./Myactive" class="list-group-item">나의 활동내역</a>
                         <a href="./Mypagewriting" class="list-group-item">글 관리</a>
+                        <a href="#" class="list-group-item">책 추천</a>
+                        <a href="#" class="list-group-item">즐겨찾기</a>
                     </ul>
               </div>
-
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">고객센터</h3>
-                </div>
-                    <ul class="list-group">
-                        <a href="#" class="list-group-item">자주 묻는 질문 보러가기</a>
-                    </ul>
-              </div>
-        </div>
+          </div>
 
         <div class="col-md-8">
           <div class="card" style="padding:30px">

@@ -100,5 +100,8 @@
 </script>
 
 <style scoped>
-
+    .container{
+    padding-top:20px;
+    padding-bottom:100px;    
+  }
 </style>

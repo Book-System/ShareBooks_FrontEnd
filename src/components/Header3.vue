@@ -11,7 +11,7 @@
                     <form class="d-flex mx-auto order-0">
                         <input class="form-control me-2" type="search" placeholder="지역 이름을 검색하세요!" aria-label="Search" style="width:300px">          
                     </form>
-                   
+
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#" @click="handleLogin">로그인</a>
