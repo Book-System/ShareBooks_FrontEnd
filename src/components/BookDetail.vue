@@ -2,16 +2,16 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-7" style="background-color: #eee;">
-                <div>
-                    <img src="../assets/logo.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div>
-                    <img src="../assets/logo.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div>
-                    <img src="../assets/logo.png" class="img-fluid rounded-start" alt="...">
-                </div>
+                
+                <vueper-slides ref="vueperslides1" :touchable="false" fade :autoplay="false" :bullets="false" @slide="$refs.vueperslides2.goToSlide($event.currentSlide.index, { emit: false })" fixed-height="400px">
+                    <vueper-slide v-for="(slide, i) in this.slides" :key="i" :image="slide.image"> </vueper-slide>
+                   
+                </vueper-slides>
 
+                <vueper-slides class="no-shadow thumbnails" ref="vueperslides2" @slide="$refs.vueperslides1.goToSlide($event.currentSlide.index, { emit: false })" :visible-slides="slides.length" fixed-height="75px" :bullets="false" :touchable="false" :gap="2.5" :arrows="false">
+                    <vueper-slide v-for="(slide, i) in this.slides" :key="i" :image="slide.image" @click="$refs.vueperslides2.goToSlide(i)">
+                    </vueper-slide>
+                </vueper-slides>
                 <div>
                     <h3>빌려주는사람님과의 거래장소</h3>
                     <div>
@@ -163,7 +163,7 @@
                         <div class="col-md-12">
                             <div style="text-align:center;">
                                 <p>빌려주는 사람님의 홈짐</p>
-                                <p>"서울 강남구 가로수길 5"<br>에 위치한 홈짐입니다.</p><br/>
+                                <p>"서울 강남구 가로수길 5"<br>에 위치한 홈짐입니다.</p><br />
                             </div>
                             <div style="text-align:right;">
                                 <p>1회 이용가격</p>
@@ -181,47 +181,57 @@
 <script>
     export default {
         name: 'App',
-        data: () => {
+        data() { 
             return {
+                slides: [{
+                    image: require('@/assets/images/el-teide-volcano-spain.jpg')
+                },
+                {
+                    image: require('@/assets/images/chernobyl-ukraine.jpg')
+                },
+                {
+                    image: require('@/assets/images/crater-lake-oregon-usa.jpg')
+                }
+                ],
                 is_show: false,
                 map: null,
                 markerPositions1: [
-                [33.452278, 126.567803],
-                [33.452671, 126.574792],
-                [33.451744, 126.572441],
+                    [33.452278, 126.567803],
+                    [33.452671, 126.574792],
+                    [33.451744, 126.572441],
                 ],
                 markerPositions2: [
-                [37.499590490909185, 127.0263723554437],
-                [37.499427948430814, 127.02794423197847],
-                [37.498553760499505, 127.02882598822454],
-                [37.497625593121384, 127.02935713582038],
-                [37.49629291770947, 127.02587362608637],
-                [37.49754540521486, 127.02546694890695],
-                [37.49646391248451, 127.02675574250912],
+                    [37.499590490909185, 127.0263723554437],
+                    [37.499427948430814, 127.02794423197847],
+                    [37.498553760499505, 127.02882598822454],
+                    [37.497625593121384, 127.02935713582038],
+                    [37.49629291770947, 127.02587362608637],
+                    [37.49754540521486, 127.02546694890695],
+                    [37.49646391248451, 127.02675574250912],
                 ],
                 markers: [],
                 infowindow: null,
-                };
-            },
-            mounted() {
-                if (window.kakao && window.kakao.maps) {
-                    this.initMap();
-                } else {
-                    const script = document.createElement("script");
-                    /* global kakao */
-                    script.onload = () => kakao.maps.load(this.initMap);
-                    script.src =
+            };
+        },
+        mounted() {
+            if (window.kakao && window.kakao.maps) {
+                this.initMap();
+            } else {
+                const script = document.createElement("script");
+                /* global kakao */
+                script.onload = () => kakao.maps.load(this.initMap);
+                script.src =
                     "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=915cffed372954b7b44804ed422b9cf0";
-                    document.head.appendChild(script);
-                }
-            },
+                document.head.appendChild(script);
+            }
+        },
         methods: {
             handle_toggle() {
                 this.is_show = !this.is_show;
             },
             initMap() {
-                    const container = document.getElementById("map");
-                    const options = {
+                const container = document.getElementById("map");
+                const options = {
                     center: new kakao.maps.LatLng(33.450701, 126.570667),
                     level: 5,
                 };
@@ -233,11 +243,9 @@
             return score + 1.5;
         }
     }
-    
 </script>
 
 <style scoped>
-
     .star-ratings {
         color: #aaa9a9;
         position: relative;
@@ -373,5 +381,24 @@
         top: 80px;
         width: 350px;
         height: 250px;
+    }
+
+    .thumbnails {
+        margin: auto;
+        max-width: 300px;
+    }
+
+    .thumbnails .vueperslide {
+        box-sizing: border-box;
+        border: 1px solid #fff;
+        transition: 0.3s ease-in-out;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    .thumbnails .vueperslide--active {
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+        opacity: 1;
+        border-color: #000;
     }
 </style>

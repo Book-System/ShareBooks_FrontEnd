@@ -138,7 +138,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #join {
   padding-right: 50px;
 }
@@ -147,8 +147,5 @@ export default {
   padding-left: 150px;
 }
 
-body {
-  padding-top: 100px;
-}
 
 </style>

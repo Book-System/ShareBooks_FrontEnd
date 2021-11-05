@@ -1,54 +1,49 @@
 <template>
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-    </div>
-      <div class="col card" style="width: 50rem; height: 35rem">
-        <div class="card-body">
-
-          <h1 class="card-title">로그인</h1><br/>
-
-          <div>
-          <p>아이디</p>
-          <input type="text" class="form-control" placeholder="아이디를 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
-          </div>
-
-          <br/>
-
-          <div>
-          <label>비밀번호</label>
-          <input type="text" class="form-control" placeholder="비밀번호를 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
-          </div>
-
-
-          <br/>
-
-
-          <div id="logincheck" class="d-grid gap-2">
-              <button class="btn btn-primary" type="button" style="height: 52px; margin: 0 auto; width:100%">로그인</button>
-          </div>
-          <br/>
-          <div class="kakao">            
-            <button class="custom-btn-primary" type="button" @click="login()" style="height: 52px; margin: 0 auto; width:100%" ></button>
-            
-          </div>
-                  
-          <br/>
-
-              <div class="account">
-                <a href="#">아이디 찾기</a> |
-                <a href="#">비밀번호 찾기</a> |
-                <a href="./Join">회원가입</a>
-                
-              </div>
-        </div>
-        
+  <div class="container">
+    <div class="row">
+      <div class="col">
       </div>
-        <div class="col">
+        <div class="col card" style="width: 50rem; height: 35rem;">
+          <div class="card-body">
+
+            <h1 class="card-title">로그인</h1><br/>
+
+            <div>
+            <p>아이디</p>
+            <input type="text" class="form-control" placeholder="아이디를 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <br/>
+
+            <div>
+            <label>비밀번호</label>
+            <input type="text" class="form-control" placeholder="비밀번호를 입력하세요" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <br/>
+
+            <div id="logincheck" class="d-grid gap-2">
+                <button class="btn btn-primary" type="button" style="height: 52px; margin: 0 auto; width:100%">로그인</button>
+            </div>
+            <br/>
+            <div class="kakao">            
+              <button class="custom-btn-primary" type="button" @click="login()" style="height: 52px; margin: 0 auto; width:100%" ></button>
+              
+            </div>
+                    
+            <br/>
+ 
+                <div class="account">
+                  <a href="#">아이디 찾기</a> |
+                  <a href="#">비밀번호 찾기</a> |
+                  <a href="./Join">회원가입</a> 
+                </div>
+          </div>
         </div>
+          <div class="col">
+          </div>
+    </div>
   </div>
-</div>
 </template>
 <script>
 export default {
@@ -78,4 +73,6 @@ export default {
     border:none;
     
   }
+
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="padding: 30px; background-color: #fff;">
             <div class="container-fluid" style="padding-left:200px">
                 <a class="navbar-brand" href="#" @click="handleHome">책 시스템</a>
@@ -58,6 +58,8 @@
 </script>
 
 <style scoped>
-
+.main {
+    height: 100px;
+}
 
 </style>

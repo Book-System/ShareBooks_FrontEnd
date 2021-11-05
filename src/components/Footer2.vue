@@ -56,5 +56,11 @@
 </script>
 
 <style scoped>
+.container {
+    font-size: 13px;
+}
+h5 {
+    font-size: 15px;
 
+}
 </style>

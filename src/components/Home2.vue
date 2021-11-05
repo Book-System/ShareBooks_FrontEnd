@@ -122,6 +122,13 @@
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Yantramanav&display=swap');
+* {
+    padding: 0;
+    margin :0;
+    font-family: 'Jua';
+}  
+
 .container {
     display: flex; 
     margin-top: 200px;  
@@ -200,14 +207,4 @@
 }
 
 
-
-  
-
-
-     
-    
-
-
-
-    
 </style>
