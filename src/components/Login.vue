@@ -64,7 +64,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
   .account {
     text-align: center;
   }
@@ -79,6 +79,6 @@ export default {
   }
   .container{
     padding-top:200px;
-    padding-bottom:100px;
+    padding-bottom:100px;    
   }
 </style>

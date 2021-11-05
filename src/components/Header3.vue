@@ -58,15 +58,7 @@
 </script>
 
 <style scoped>
-.custom-btn-image{
-    background-color :transparent;
-    background-image :url("../assets/images/searchicon.png");
-    background-repeat: no-repeat;
-    background-size :100%;   
-    height:25px;
-    border:none;
-    
-  }
+
 
 
 </style>
