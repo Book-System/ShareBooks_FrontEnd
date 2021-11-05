@@ -122,6 +122,7 @@
 </script>
 
 <style scoped>
+
 .container {
     display: flex; 
     margin-top: 200px;  

@@ -138,17 +138,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #join {
   padding-right: 50px;
 }
-
 #joinbtn {
   padding-left: 150px;
 }
-
-body {
-  padding-top: 100px;
+.container{
+    padding-top:200px;
+    padding-bottom:100px;
 }
-
 </style>

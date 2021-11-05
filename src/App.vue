@@ -10,7 +10,7 @@
   <main>
     <router-view></router-view>
   </main>
-  <footer style="background-color: #ECE2E1;">
+  <footer >
     <Footer>
     </Footer>
   </footer>
@@ -38,6 +38,8 @@ export default {
 </script>
 
 <style>
+
+
 
 
 
