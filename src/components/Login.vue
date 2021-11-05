@@ -72,3 +72,13 @@ export default {
     border:none;
     
   }
+    .container{
+    padding-top:60px;
+    padding-bottom:100px;    
+  }
+
+
+
+
+</style>
+

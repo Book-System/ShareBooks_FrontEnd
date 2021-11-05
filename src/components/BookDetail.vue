@@ -3,7 +3,7 @@
         <div class="row g-0">
             <div class="col-md-7" style="background-color: #eee;">
                 
-                <vueper-slides ref="vueperslides1" :touchable="false" fade :autoplay="false" :bullets="false" @slide="$refs.vueperslides2.goToSlide($event.currentSlide.index, { emit: false })" fixed-height="400px">
+                <!-- <vueper-slides ref="vueperslides1" :touchable="false" fade :autoplay="false" :bullets="false" @slide="$refs.vueperslides2.goToSlide($event.currentSlide.index, { emit: false })" fixed-height="400px">
                     <vueper-slide v-for="(slide, i) in this.slides" :key="i" :image="slide.image"> </vueper-slide>
                    
                 </vueper-slides>
@@ -11,7 +11,8 @@
                 <vueper-slides class="no-shadow thumbnails" ref="vueperslides2" @slide="$refs.vueperslides1.goToSlide($event.currentSlide.index, { emit: false })" :visible-slides="slides.length" fixed-height="75px" :bullets="false" :touchable="false" :gap="2.5" :arrows="false">
                     <vueper-slide v-for="(slide, i) in this.slides" :key="i" :image="slide.image" @click="$refs.vueperslides2.goToSlide(i)">
                     </vueper-slide>
-                </vueper-slides>
+                </vueper-slides> -->
+
                 <div>
                     <h3>빌려주는사람님과의 거래장소</h3>
                     <div>
@@ -183,16 +184,16 @@
         name: 'App',
         data() { 
             return {
-                slides: [{
-                    image: require('@/assets/images/el-teide-volcano-spain.jpg')
-                },
-                {
-                    image: require('@/assets/images/chernobyl-ukraine.jpg')
-                },
-                {
-                    image: require('@/assets/images/crater-lake-oregon-usa.jpg')
-                }
-                ],
+                // slides: [{
+                //     image: require('@/assets/images/el-teide-volcano-spain.jpg')
+                // },
+                // {
+                //     image: require('@/assets/images/chernobyl-ukraine.jpg')
+                // },
+                // {
+                //     image: require('@/assets/images/crater-lake-oregon-usa.jpg')
+                // }
+                // ],
                 is_show: false,
                 map: null,
                 markerPositions1: [

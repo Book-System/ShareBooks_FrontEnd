@@ -146,4 +146,10 @@ export default {
   padding-left: 150px;
 }
 
+.container{
+    padding-top:80px;
+    padding-bottom:100px;
+    
+}
+
 </style>

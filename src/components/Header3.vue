@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="padding: 30px; background-color: #fff;">
             <div class="container-fluid" style="padding-left:200px">
                 <a class="navbar-brand" href="#" @click="handleHome">책 시스템</a>
@@ -9,7 +9,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <form class="d-flex mx-auto order-0">
-                        <input class="form-control me-2" type="search" placeholder="지역 이름을 검색하세요!" aria-label="Search" style="width:300px">                        
+                        <input class="form-control me-2" type="search" placeholder="지역 이름을 검색하세요!" aria-label="Search" style="width:300px">          
                     </form>
                    
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
@@ -58,7 +58,9 @@
 </script>
 
 <style scoped>
-
+.main {
+    height: 100px;
+}
 
 
 </style>

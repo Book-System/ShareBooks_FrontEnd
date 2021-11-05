@@ -10,8 +10,9 @@
     <router-view></router-view>
   </main>
 
-  <footer style=" background-color: #ECE2E1;" >
-    <Footer >
+  <footer style="background-color: #ECE2E1; height:10%">
+    <Footer>
+
     </Footer>
   </footer>
 
