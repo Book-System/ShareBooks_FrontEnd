@@ -32,13 +32,15 @@
 
                     <ul class="nav nav-tabs">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">게시글</a>
+                        <a class="nav-link active" data-toggle="tab" href="#aaa">게시글</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">리뷰</a>
+                        <a class="nav-link" data-toggle="tab" href="#vvv">리뷰</a>
                       </li>
                     </ul>
 
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="aaa">
                       <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
@@ -96,12 +98,19 @@
                             </tbody>
                         </table>
                         <hr>
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4 text-center">
-                                <ul class="pagination" id="myPager"></ul>
-                            </div>
+                          <div class="row">
+                              <div class="col-md-4 col-md-offset-4 text-center">
+                                  <ul class="pagination" id="myPager"></ul>
+                              </div>
+                          </div>
                         </div>
-                      </div>
+                    </div>
+                    
+                  <br/>
+                    <div class="tab-pane fade" id="vvv">
+                      <p> 남긴 리뷰가 없습니다 :) </p>
+                    </div>
+                  </div>
 
               </div>
           </div>

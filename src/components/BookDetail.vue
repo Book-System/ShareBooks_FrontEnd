@@ -102,10 +102,7 @@
                                                     </div>
                                                     <br />
 
-                                                    <div class="text-right">
-                                                        <div class="stars starrr" data-rating="0"></div>
-                                                        <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;"></a>
-                                                        <button class="btn btn-success btn-lg" type="submit">댓글쓰기</button>
+                                                    <div style="text-align: right">                                                   <button class="btn btn-success btn-lg" type="submit">댓글쓰기</button>
                                                     </div>
                                                 </div>
                                             </div>
