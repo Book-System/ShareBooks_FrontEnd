@@ -1,9 +1,9 @@
 <template>
-    <div id="banner" class="col bg-dark p-5 rounded">
-          <h3 class="mypage">책 등록하기</h3>
-    </div><br/>
-
+   
 <div class="container">
+   <div class="welcome">
+   <img src="../assets/images/bookimage.png" style="width:450px; height:240px; margin-left:450px; " />  
+  </div> 
   <div class="row">
     <div class="col">
     </div>
@@ -42,8 +42,8 @@
             <div class="col-sm-6">
               <input type="text" class="form-control" v-model="postcode" placeholder="우편번호" aria-describedby="basic-addon1">
             </div>
-            <div class="col-sm-4 d-grid gap-2 d-md-block">
-              <input type="button" class="btn1 btn-primary" @click="execDaumPostcode()" value="우편번호 찾기"><br/>
+            <div class="col-sm-4 ">
+              <input type="button" class="btn" @click="execDaumPostcode()" value="우편번호 찾기"><br/>
             </div>
             <div class="col-sm-8">
               <input type="text" class="form-control" v-model="address" placeholder="주소"  aria-describedby="basic-addon1"><br>
@@ -128,12 +128,11 @@
         <div class="input-group mb-3">
             <input type="file" class="form-control" id="inputGroupFile02">
         </div>
-        <br/>
-        
+        <br/>     
        
 
             <div id="joinbtn" class="d-grid gap-2 d-md-block">
-              <button class="btn btn-primary" type="button">등록하기</button>
+               <a href="#" class="myButton">등록하기</a>
             </div>
 
         </div>
@@ -216,6 +215,48 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.container{
+  padding-top:20px;
+  padding-bottom:100px;
+}
+#joinbtn {
+  padding-left: 230px;
+}
+.myButton {
+	background-color:#6ac0cfa6;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#fff;
+	font-family:Verdana;
+	font-size:19px;
+	padding:7px 20px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #6ac0cfa6;
+}
+.myButton:hover {
+	background-color:#6ac0cfa6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
+.btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 15px;
+  background: #6ac0cfa6;
+  padding: 6px 9px 3px 9px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #6ac0cf;
+  text-decoration: none;
+}
 </style>

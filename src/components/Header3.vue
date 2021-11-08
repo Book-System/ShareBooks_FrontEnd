@@ -10,6 +10,9 @@
 
                     <form class="d-flex mx-auto order-0">
                         <input class="form-control me-2" type="search" placeholder="지역 이름을 검색하세요!" aria-label="Search" style="width:300px">          
+                     <div class="input-group-btn">
+                          <button class="custom-btn-image" type="submit"></button>                  
+                       </div>
                     </form>
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
@@ -61,6 +64,25 @@
 .main {
     height: 100px;
 }
+.input-group-btn{
+    margin-top:12px;
+    margin-left:3px;
+    height: 45px;   
+    width:30px;
+    
+
+}
+.custom-btn-image{
+    background-color :transparent;
+    background-image :url("../assets/images/searchicon.png");
+    background-repeat: no-repeat;
+    background-size :33px;   
+    height:33px;
+    width:33px;
+    border:none;
+    
+  }
+
 
 
 </style>

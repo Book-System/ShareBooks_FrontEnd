@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="banner" class="col bg-dark p-5 rounded">
+        <div id="banner" class="col p-5 rounded" style="background-color:#ccc">
             <h3 class="mypage">책 예약하기</h3>
         </div><br/>
 
@@ -126,5 +126,7 @@
 <style scoped>
     .allcontainer {
         padding-left: 300px;
+      
     }
+   
 </style>
