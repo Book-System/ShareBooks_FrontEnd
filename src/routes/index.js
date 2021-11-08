@@ -26,6 +26,7 @@ import BoardDetail from '@/components/BoardDetail.vue';
 import Home2 from '@/components/Home2.vue';
 import Header3 from '@/components/Header3.vue';
 import Footer2 from '@/components/Footer2.vue';
+import Sns from '@/components/Sns.vue';
 
 
 const routes = [
@@ -55,6 +56,7 @@ const routes = [
     { path: '/', name: 'Home2', component:Home2 },
     { path: '/Header3', name: 'Header3', component:Header3 },
     { path: '/Footer2', name: 'Footer2', component:Footer2 },
+    { path: '/Sns', name: 'Sns', component:Sns },
 ];
 
 const router = createRouter({

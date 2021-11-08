@@ -113,7 +113,7 @@
 
 </script>
 
-<style>
+<style scoped>
     .col-md-4 {
         display: inline-block;
         margin-left: -10px;

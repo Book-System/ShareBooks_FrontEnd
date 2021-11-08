@@ -37,15 +37,23 @@
           </div>
           <br/>
 
+          <div class="d-flex">
+          <label>시작일&nbsp;&nbsp; </label>
+          <p><input type="date"></p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <label>반납일&nbsp;&nbsp; </label>
+          <p><input type="date"></p><br/>
+          </div>
+
           <label>주소</label>
           <div class="row">
             <div class="col-sm-6">
               <input type="text" class="form-control" v-model="postcode" placeholder="우편번호" aria-describedby="basic-addon1">
             </div>
             <div class="col-sm-4 ">
-              <input type="button" class="btn" @click="execDaumPostcode()" value="우편번호 찾기"><br/>
+              <input type="button" class="btn" @click="execDaumPostcode()" value="우편번호 찾기">
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-8"><br/>
               <input type="text" class="form-control" v-model="address" placeholder="주소"  aria-describedby="basic-addon1"><br>
             </div>
           </div>

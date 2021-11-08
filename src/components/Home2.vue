@@ -39,7 +39,6 @@
                 </div>
                 </div>
             </div>
-          
         </div>
     </div>
     <div class="main background-color-blue">
@@ -54,7 +53,7 @@
                    Month
                 </div>
                 <div class="main-text-btn">
-                  <a href="./Slider2" class="myButton">Recommend</a>
+                  <a href="./Slider" class="myButton">Recommend</a>
                 </div>
                 </div>
             </div>

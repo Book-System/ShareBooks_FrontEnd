@@ -166,7 +166,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   .mypage {
     color: white;
     text-align: center;
