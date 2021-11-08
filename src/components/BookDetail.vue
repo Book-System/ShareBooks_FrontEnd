@@ -128,7 +128,7 @@
                 </div>
 
                 <div class="container">
-                    <div class="card" style="width:750px">
+                    <div class="card" style="width:650px">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2">
@@ -152,7 +152,7 @@
                         </div>
                     </div>
 
-                    <div class="card" style="width:750px">
+                    <div class="card" style="width:650px">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2">
@@ -176,7 +176,7 @@
                         </div>
                     </div>
 
-                    <div class="card" style="width:750px">
+                    <div class="card" style="width:650px">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2">

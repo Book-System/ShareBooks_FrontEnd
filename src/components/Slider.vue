@@ -61,7 +61,8 @@
                     </div>
                   </div>
                   <div class="row flex-center ps-5 ps-md-6 ps-lg-7">
-                    <div class="col-12 position-relative"><a class="carousel-control-prev carousel-icon z-index-2" href="#carouselTestimonials" style="left:-1.9rem;" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next carousel-icon z-index-2" href="#carouselTestimonials" role="button" data-bs-slide="next" style="right:auto;"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></a></div>
+                    <div class="col-12 position-relative">
+                      <a class="carousel-control-prev carousel-icon z-index-2" href="#carouselTestimonials" style="left:-1.9rem;" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next carousel-icon z-index-2" href="#carouselTestimonials" role="button" data-bs-slide="next" style="right:auto;"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></a></div>
                   </div>
                 </div>
               </div>
