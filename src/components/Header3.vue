@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="padding: 30px; background-color: #fff;">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom" style="padding: 30px; background-color: #fff;">
             <div class="container-fluid" style="padding-left:200px">
                 <a class="navbar-brand" href="#" @click="handleHome">share books</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
