@@ -218,5 +218,9 @@
 </script>
 
 <style scoped>
+.container{
+  padding-top:90px;
+  padding-bottom:100px;
+}
 
 </style>

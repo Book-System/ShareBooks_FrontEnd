@@ -66,7 +66,7 @@
 	.tbAdd td.txt_cont{height:300px; vertical-align:top;}
 
   .container{
-    padding-top:20px;
+    padding-top:90px;
     padding-bottom:100px;    
   }
 </style>

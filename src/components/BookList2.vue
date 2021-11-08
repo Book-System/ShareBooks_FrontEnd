@@ -41,5 +41,8 @@
 </script>
 
 <style scoped>
-
+.container{
+  padding-top:100px;
+  padding-bottom:100px;
+}
 </style>

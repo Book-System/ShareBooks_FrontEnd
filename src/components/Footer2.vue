@@ -57,7 +57,7 @@
 
 <style scoped>
 .container {
-    font-size: 13px;
+    font-size: 15px;
 }
 h5 {
     font-size: 15px;

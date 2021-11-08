@@ -84,5 +84,8 @@ export default {
 </script>
 
 <style scoped>
-
+.container{
+  padding-top:80px;
+  padding-bottom:100px;
+}
 </style>

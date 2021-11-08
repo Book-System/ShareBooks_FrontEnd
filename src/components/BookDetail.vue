@@ -79,7 +79,7 @@
                             </div><br>
                             <div v-if="is_show">
                                 <div class="allcontainer">
-                                    <div class="container">
+                                    <div class="containers">
                                         <div class="row">
                                             <div class="col-md-12 card">
                                                 <div class="card-body">
@@ -102,7 +102,8 @@
                                                     </div>
                                                     <br />
 
-                                                    <div style="text-align: right">                                                   <button class="btn btn-success btn-lg" type="submit">댓글쓰기</button>
+                                                    <div style="text-align: right">                                                   
+                                                        <button class="btn btn-success btn-lg" type="submit">댓글쓰기</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -116,6 +117,7 @@
                         </div>
                     </div>
                 </div>
+                <br/>
 
 
 
@@ -127,8 +129,8 @@
                     </div>
                 </div>
 
-                <div class="container">
-                    <div class="card" style="width:650px">
+                <div class="containers">
+                    <div class="card" style="width:680px">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2">
@@ -152,7 +154,7 @@
                         </div>
                     </div>
 
-                    <div class="card" style="width:650px">
+                    <div class="card" style="width:680px">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2">
@@ -176,7 +178,7 @@
                         </div>
                     </div>
 
-                    <div class="card" style="width:650px">
+                    <div class="card" style="width:680px">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2">
