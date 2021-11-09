@@ -94,7 +94,7 @@
 
 <style scoped>
 .ck-editor__editable {
-    min-height: 500px;
+    min-height: 300px;
 }
 
 .container{

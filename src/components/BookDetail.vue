@@ -103,7 +103,7 @@
                                                     <br />
 
                                                     <div style="text-align: right"> 
-                                                         <input type="submit" class="btn" value="리뷰쓰기"><br/>                                                 
+                                                         <input type="submit" class="btn" value="댓글달기"><br/>                                                 
                                                     </div>
                                                 </div>
                                             </div>

@@ -55,7 +55,7 @@
                                     <div>
                                         <button type="button" class="btn_img" @click="handle_comment">
                                             <img src="../assets/images/chat.png" alt="이미지" style="width: 20px; height:22px">
-                                            댓글 3</button>
+                                            댓글 1</button>
                                     </div>
 
                                         
@@ -75,7 +75,7 @@
                             <div class="containers">
                                 <div class="card" style="width:820px">
                                     <div class="around">
-                                        <h4>댓글3</h4>
+                                        <h4>댓글1</h4>
                                             <div>
                                                 최신순 등록순
                                             </div>
