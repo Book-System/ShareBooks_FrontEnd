@@ -1,7 +1,7 @@
 <template>
 <div class="main">
         <div class="banner" >
-          <img src="../assets/images/bookimage3.png" style="width:350px; height:240px;margin-top:0px; margin-left:520px; " /> 
+          <img src="../assets/images/bookimage3.png" style="width:350px; height:240px;margin-top:20px; margin-left:30%; " /> 
         </div><br/>   
 <div class="container">
  
@@ -218,14 +218,11 @@ export default {
 </script>
 
 <style scoped>
-.main{
-  padding-top:80px;
-}
 
 .banner{
     background-color:#6ac0cf42;
      width:100%;
-     height:200px;
+     height:220px;
 
 }
 .container{ 

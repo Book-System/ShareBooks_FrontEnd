@@ -1,5 +1,9 @@
 <template>
-    <div>
+    <div class="main">
+        <div class="banner" >
+          <img src="../assets/images/deal1.png" style="width:340px; height:320px; margin-left:19%; " /> 
+        </div><br/>
+
         <div class="allcontainer">
             <div class="container">
                 <div class="row">
@@ -38,7 +42,7 @@
                             <br/>
 
                             <div id="joinbtn" class="d-grid gap-2 d-md-block">
-                                <button class="btn btn-primary" type="button">예약하기</button>
+                                <a href="#" class="myButton">예약하기</a>
                             </div>
                         </div>
                     </div>
@@ -120,11 +124,42 @@
 </script>
 
 <style scoped>
-    .allcontainer {
-        padding-left: 300px;
-        padding-top:100px;
-        padding-bottom:100px;
+.main{
+    padding-bottom:100px;
+}
+.banner{
+    background-color:#d1c4e92d;
+     width:100%;
+     height:220px;
+
+}
+.allcontainer {
+     padding-left: 300px;
       
-    }
+}
+
+#joinbtn{
+    padding-left:200px;
+}
+.myButton {
+	background-color:#d1c4e9;
+	border-radius:12px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:8px 55px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #d1c4e9;
+}
+.myButton:hover {
+	background-color:#bea8e7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+   
    
 </style>

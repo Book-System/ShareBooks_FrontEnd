@@ -226,11 +226,11 @@ padding-bottom:100px;
 .banner{
     background-color:#ffcdd22f;
      width:100%;
-     height:250px;
+     height:200px;
 }
 .banner-text{
  text-align: center;
- padding-top:150px;
+padding-top: 5%;
   color: #000;
 
 }

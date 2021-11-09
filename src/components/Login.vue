@@ -1,11 +1,13 @@
+
+
 <template>
 
 <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col-8">
        <img src="../assets/images/Booklover.png" style="width:500px; height:500px;" />  
     </div>
-      <div class="col" style="padding-left:100px;" >
+      <div class="col-3">
         <div>
 
           
@@ -42,11 +44,11 @@
                   <a href="#">비밀번호 찾기</a><br/>
                   계정이 없으신가요? <a href="./Join">회원가입</a> 
               </div>
-
+  <div class="col-1">
+    </div>
         </div>
       </div>
-        <div class="col">
-        </div>
+      
   </div>
 </div>
 </template>
@@ -65,6 +67,10 @@ export default {
 
 
 <style scoped>
+.col-8{
+  text-align: center;
+}
+
   .account {
     text-align: center;
   }
@@ -92,10 +98,10 @@ export default {
 	cursor:pointer;
 	color:rgb(94, 94, 94);
 	font-family:Verdana;
-	font-size:19px;
-	padding:13px 135px;
+	font-size:18px;
+	padding:3% 41%;
 	text-decoration:none;
-	text-shadow:0px 0px 0px #283966;
+	text-shadow:0px 0px 0px #86cae6;
 }
 .myButton:hover {
 	background-color:#86cae6;

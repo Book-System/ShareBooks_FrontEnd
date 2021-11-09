@@ -167,15 +167,14 @@
 .banner{
     background-color:#d1c4e92d;
      width:100%;
-     height:250px;
+     height:200px;
 }
 .banner-text{
  text-align: center;
- padding-top:150px;
+ padding-top:5%;
   color: #000;
 
 }
-
  
   .update{
     margin-left: 180px;

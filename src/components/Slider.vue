@@ -1,9 +1,4 @@
-<template>
-    <div id="banner" class="col bg-dark p-5 rounded">
-        <br />
-        <h3 class="mypage">이달의 대여</h3><br />
-    </div><br />
-
+<template>   
     <section class="pb-7 pt-5" id="testimonial">
         <div class="container-xxl">
             <div class="row flex-center h-100">
@@ -231,7 +226,7 @@
 
 <style scoped>
     section {
-        padding-top: 80px;
+        padding-top: 100px;
     }
     
 </style>

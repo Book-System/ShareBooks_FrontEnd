@@ -1,7 +1,7 @@
 <template>
 <div class="container">
   <div class="welcome">
-   <img src="../assets//images/welcome4.jpg" style="width:550px; height:210px; margin-left:180px; " />  
+   <img src="../assets//images/welcome4.jpg" style="width:550px; height:210px;  " />  
   </div>   
   <div class="row">
     <div class="col">
@@ -162,7 +162,7 @@ export default {
 
 <style  scoped>
 .welcome{
-  margin-left:200px;
+  text-align: center;
 }
 
 #join {

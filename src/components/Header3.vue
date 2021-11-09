@@ -1,8 +1,8 @@
 <template>
     <div class="main">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom" style="padding: 30px; background-color: #fff;">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom" style=" background-color: #fff;">
             <div class="container-fluid" style="padding-left:200px">
-                <img src="../assets/images/logo2.png" style="width:15%; height:15%" @click="handleHome">
+                <img src="../assets/images/logo2-removebg.png" style="width:12%; height:12%" @click="handleHome">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>   
