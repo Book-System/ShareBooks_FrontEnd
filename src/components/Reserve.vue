@@ -1,9 +1,5 @@
 <template>
     <div>
-        <div id="banner" class="col p-5 rounded" style="background-color:#ccc">
-            <h3 class="mypage">책 예약하기</h3>
-        </div><br/>
-
         <div class="allcontainer">
             <div class="container">
                 <div class="row">
@@ -126,6 +122,8 @@
 <style scoped>
     .allcontainer {
         padding-left: 300px;
+        padding-top:100px;
+        padding-bottom:100px;
       
     }
    
