@@ -74,7 +74,7 @@
                                     <h3 style="display: inline">3개의 리뷰</h3>
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-secondary" style="height: 30px" @click="handle_toggle">리뷰쓰기</button>
+                                    <button type="button" class="btn " style="height: 30px" @click="handle_toggle">리뷰쓰기</button>
                                 </div>
                             </div><br>
                             <div v-if="is_show">
@@ -102,8 +102,8 @@
                                                     </div>
                                                     <br />
 
-                                                    <div style="text-align: right">                                                   
-                                                        <button class="btn btn-success btn-lg" type="submit">댓글쓰기</button>
+                                                    <div style="text-align: right"> 
+                                                         <input type="submit" class="btn" value="리뷰쓰기"><br/>                                                 
                                                     </div>
                                                 </div>
                                             </div>
@@ -216,7 +216,9 @@
                             <div style="text-align:right;">
                                 <h4>5000원</h4>
                             </div>
-                            <button type="button" class="btn btn-primary" style="margin-left:90px">수정 및 삭제하기</button>
+                            <div class="button">
+                            <input type="button" class="btn" value="수정 및 삭제하기"><br/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -297,6 +299,9 @@
 </script>
 
 <style scoped>
+.container{
+    padding-top:150px;
+}
     .star-ratings {
         color: #aaa9a9;
         position: relative;
@@ -452,4 +457,24 @@
         opacity: 1;
         border-color: #000;
     }
+
+    .btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 15px;
+  background: #93cfca;
+  padding: 6px 9px 3px 9px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #b2dfdb;
+  text-decoration: none;
+}
+.button{
+    text-align: center;
+}
 </style>

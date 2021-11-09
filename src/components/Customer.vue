@@ -1,17 +1,17 @@
 <template>
+ <div class="main">
+        <div class="banner" >
+           <h2 class="banner-text">고객센터</h2>
+        </div><br/>   
 
     <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">고객센터</h3>
-                </div>
-                    <ul class="list-group">
-                        <a href="./customer" class="list-group-item">문의하기</a>
-                        <a href="./board" class="list-group-item">문의게시판</a>
-                        <a href="./Faq" class="list-group-item">자주묻는질문</a>
-                    </ul>
+            <div class="list-group">
+                    <a class="list-group-item list-group-item-action disabled">고객센터</a>
+                    <a href="./customer" class="list-group-item list-group-item-action">문의하기</a>
+                    <a href="./board" class="list-group-item list-group-item-action">문의게시판</a>
+                    <a href="./Faq" class="list-group-item list-group-item-action">자주묻는질문</a> 
                 </div>
         </div>
 
@@ -54,12 +54,12 @@
                                 <td><ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor></td>
                                 </tr>
         
-                                </table>
-
+                                </table><br/>
+                            
                                 
         
                                 <center>
-                                <input type = "submit" value="작성">
+                                <input type="submit" class="btn" value="등록하기">
                                 </center>
                         </td>
                         </tr>
@@ -70,6 +70,7 @@
             </div>
         </div>
     </div>
+  </div>
   </div>
     
 </template>
@@ -91,14 +92,42 @@
     }
 </script>
 
-<style>
+<style scoped>
 .ck-editor__editable {
-    min-height: 300px;
+    min-height: 500px;
 }
 
 .container{
-padding-top:90px;
 padding-bottom:100px;    
 }
+
+.banner{
+    background-color:#ffcdd22f;
+     width:100%;
+     height:250px;
+}
+.banner-text{
+ text-align: center;
+ padding-top:150px;
+  color: #000;
+
+}
+.btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 15px;
+  background: #f5b3ba;
+  padding: 6px 9px 3px 9px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ffcdd2;
+  text-decoration: none;
+}
+
 
 </style>

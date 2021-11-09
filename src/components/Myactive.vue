@@ -1,23 +1,20 @@
 <template>
-    <div id="banner" class="col bg-dark p-5 rounded">
-          <h3 class="mypage">마이페이지</h3>
-    </div><br/>
+  <div class="main">
+     <div class="banner" >
+           <h2 class="banner-text">마이페이지</h2>
+        </div><br/>
 
   <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">마이페이지</h3>
-                </div>
-                    <ul class="list-group">
-                        <a href="./Updatemypage" class="list-group-item">내 정보수정</a>
-                        <a href="./Myactive" class="list-group-item">나의 활동내역</a>
-                        <a href="./Mypagewriting" class="list-group-item">글 관리</a>
-                        <a href="#" class="list-group-item">책 추천</a>
-                        <a href="#" class="list-group-item">즐겨찾기</a>
-                    </ul>
-              </div>
+            <div class="list-group">
+                     <a href="./mypage" class="list-group-item list-group-item-action">마이페이지</a>
+                    <a href="./Updatemypage" class="list-group-item list-group-item-action">내 정보 수정</a>
+                    <a href="./Myactive" class="list-group-item list-group-item-action">나의 활동 내역</a>
+                    <a href="./Mypagewriting" class="list-group-item list-group-item-action">글 관리</a>
+                    <a href="#" class="list-group-item list-group-item-action">책 추천</a> 
+                    <a href="#" class="list-group-item list-group-item-action">즐겨찾기</a> 
+            </div>
           </div>
 
         <div class="col-md-8">
@@ -52,9 +49,9 @@
                             <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
                             <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
                           </div>
-                          <div id="parent">
-                            <button id="second"  class="btn1 btn-outline-primary" type="button">삭제</button>
-                            <button id="first"  class="btn1 btn-primary" type="button">수정</button>
+                          <div class="btn-family">
+                          <a href="#" class="myButton1">삭제</a>
+                          <a href="#" class="myButton1">수정</a>
                           </div>
                         </div>
                       </div>
@@ -67,9 +64,9 @@
                             <p class="card-text">위치: 부산광역시 남구 수영로 387</p>
                             <p class="card-text">대여일 : 10월 12일 ~ 10월 14일</p>
                           </div>
-                          <div id="parent">
-                            <button id="second"  class="btn1 btn-outline-primary" type="button">삭제</button>
-                            <button id="first"  class="btn1 btn-primary" type="button">수정</button>
+                           <div class="btn-family">
+                          <a href="#" class="myButton1">삭제</a>
+                          <a href="#" class="myButton1">수정</a>
                           </div>
                         </div>
                       </div>
@@ -86,6 +83,7 @@
               </div>
           </div>
         </div>
+        </div>
 
 </template>
 
@@ -95,16 +93,31 @@
   }
 </script>
 
-<style scoped>
-  .mypage {
-    color: white;
-    text-align: center;
-  }
+<style> 
 
-  #parent{
-    width: 100%;
+  .btn-family{   
     margin: 10px auto;
-    padding-right: 10px;
+    padding-left: 200px;
+  }
+ .myButton1 {
+	background-color:#d1c4e9;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:16px;
+	padding:6px 11px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #d1c4e9;
+  margin-right:10px;
+}
+.myButton1:hover {
+	background-color:#d1c4e9;
+}
+.myButton1:active {
+	position:relative;
+	top:1px;
 }
 
   #first {
@@ -117,6 +130,27 @@
     margin-left: 2%;
     width: 20%;
 }
+
+.container{
+
+  padding-bottom:100px;
+}
+
+.banner{
+    background-color:#d1c4e92d;
+     width:100%;
+     height:250px;
+}
+.banner-text{
+ text-align: center;
+ padding-top:150px;
+  color: #000;
+
+}
+.cardbody{
+  background-color: transparent;
+}
+
 
 
 </style>

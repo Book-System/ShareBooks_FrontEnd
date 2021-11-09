@@ -1,23 +1,20 @@
 <template>
-    <div id="banner" class="col bg-dark p-5 rounded">
-          <h3 class="mypage">마이페이지</h3>
-    </div><br/>
+    <div class="main">
+        <div class="banner" >
+           <h2 class="banner-text">마이페이지</h2>
+        </div><br/>
 
   <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">마이페이지</h3>
-                </div>
-                    <ul class="list-group">
-                        <a href="./Updatemypage" class="list-group-item">내 정보수정</a>
-                        <a href="./Myactive" class="list-group-item">나의 활동내역</a>
-                        <a href="./Mypagewriting" class="list-group-item">글 관리</a>
-                        <a href="#" class="list-group-item">책 추천</a>
-                        <a href="#" class="list-group-item">즐겨찾기</a>
-                    </ul>
-              </div>
+           <div class="list-group">
+                    <a href="./mypage" class="list-group-item list-group-item-action">마이페이지</a>
+                    <a href="./Updatemypage" class="list-group-item list-group-item-action">내 정보 수정</a>
+                    <a href="./Myactive" class="list-group-item list-group-item-action">나의 활동 내역</a>
+                    <a href="./Mypagewriting" class="list-group-item list-group-item-action">글 관리</a>
+                    <a href="#" class="list-group-item list-group-item-action">책 추천</a> 
+                    <a href="#" class="list-group-item list-group-item-action">즐겨찾기</a> 
+            </div>
         </div>
 
         <div class="col-md-7">
@@ -73,7 +70,7 @@
                                   <input type="text" class="form-control" placeholder="ㅁㅁㅁ" aria-label="Username" aria-describedby="basic-addon1">
                                 </div>
                               <div class="col-sm-4 d-grid gap-2 d-md-block">
-                                <button class="btn1 btn-primary" type="button">중복확인</button>
+                               <a href="#" class="myButton1">중복확인</a>
                               </div>
                               </div>
                               <br/>
@@ -85,21 +82,20 @@
                               <br/>
 
                               <label>주소</label>
-                              <div class="row">
-                                <div class="col-sm-7">
-                                  <input type="text" v-model="postcode" class="form-control" placeholder="06000" aria-label="Username" aria-describedby="basic-addon1">
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <input type="text" class="form-control" v-model="postcode" placeholder="우편번호" aria-describedby="basic-addon1">
+                                  </div>
+                                  <div class="col-sm-4 ">
+                                    <input type="button" class="btn" @click="execDaumPostcode()" value="우편번호 찾기"><br/>
+                                  </div>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" v-model="address" placeholder="주소"  aria-describedby="basic-addon1"><br>
+                                  </div>
                                 </div>
-                              <div class="col-sm-4 d-grid gap-2 d-md-block">
-                                <button class="btn1 btn-primary" type="button" @click="execDaumPostcode()">우편번호 찾기</button>
-                              </div>
-                                <div class="col-sm-12">
-                                  <input type="text" class="form-control" v-model="address" placeholder="부산광역시 사상구" aria-label="Username" aria-describedby="basic-addon1">
-                                </div>
-                              </div>
-                              <br/>
 
                         <div id="joinbtn" class="d-grid gap-2 d-md-block">
-                          <button class="btn btn-primary" type="button">수정하기</button>
+                         <input type="button" class="btn" value="등록하기"><br/>
                         </div>
 
                             </form>
@@ -110,15 +106,16 @@
         </div>
     </div>
   </div>
+  </div>
 </template>
 
-<script>
-export default {
+<script>  export default {
   data() {
     return {
       postcode: "",
       address: "",
       extraAddress: "",
+      value:"",
     };
   },
   methods: {
@@ -161,17 +158,72 @@ export default {
           this.postcode = data.zonecode;
         },
       }).open();
-    },
-  },
-};
+    }   
+}
+}
 </script>
 
 <style scoped>
-  .mypage {
-    color: white;
-    text-align: center;
-  }
+.banner{
+    background-color:#d1c4e92d;
+     width:100%;
+     height:250px;
+}
+.banner-text{
+ text-align: center;
+ padding-top:150px;
+  color: #000;
+
+}
+
+ 
   .update{
     margin-left: 180px;
   }
+
+  .myButton1 {
+	background-color:#d1c4e9;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	padding:5px 10px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #d1c4e9;
+}
+.myButton1:hover {
+	background-color:#d1c4e9;
+}
+.myButton1:active {
+	position:relative;
+	top:1px;
+}
+
+.btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 15px;
+  background: #d1c4e9;
+  padding: 6px 9px 3px 9px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #d1c4e9;
+  text-decoration: none;
+}
+
+#joinbtn{
+  padding-left:250px;
+}
+
+.container{
+  padding-bottom:100px;
+}
+
 </style>

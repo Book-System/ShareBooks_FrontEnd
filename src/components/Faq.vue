@@ -1,16 +1,16 @@
 <template>
+<div class="main">
+        <div class="banner" >
+           <h2 class="banner-text">고객센터</h2>
+        </div><br/>  
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">고객센터</h3>
-                    </div>
-                    <ul class="list-group">
-                        <a href="./customer" class="list-group-item">문의하기</a>
-                        <a href="./board" class="list-group-item">문의게시판</a>
-                        <a href="./Faq" class="list-group-item">자주묻는질문</a>
-                    </ul>
+         <div class="list-group">
+                    <a class="list-group-item list-group-item-action disabled">고객센터</a>
+                    <a href="./customer" class="list-group-item list-group-item-action">문의하기</a>
+                    <a href="./board" class="list-group-item list-group-item-action">문의게시판</a>
+                    <a href="./Faq" class="list-group-item list-group-item-action">자주묻는질문</a> 
                 </div>
             </div>
 
@@ -199,6 +199,7 @@
             </div>
         </div>
     </div>
+</div>
 </template>
 
 <script>
@@ -219,8 +220,19 @@
 
 <style scoped>
 .container{
-  padding-top:90px;
-  padding-bottom:100px;
+
+padding-bottom:100px;    
+}
+.banner{
+    background-color:#ffcdd22f;
+     width:100%;
+     height:250px;
+}
+.banner-text{
+ text-align: center;
+ padding-top:150px;
+  color: #000;
+
 }
 
 </style>

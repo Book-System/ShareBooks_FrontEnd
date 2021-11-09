@@ -5,10 +5,10 @@
     <div class="col">
        <img src="../assets/images/Booklover.png" style="width:500px; height:500px;" />  
     </div>
-      <div class="col card" style="width: 400px; height: 550px;">
-        <div class="card-body">
+      <div class="col" style="padding-left:100px;" >
+        <div>
 
-          <h1 class="card-title">로그인</h1><br/>
+          
 
           <div>
           <p>아이디</p>
@@ -37,7 +37,7 @@
                   
           <br/>
 
-             <div class="account">
+                <div class="account">
                   <a href="#">아이디 찾기</a> |
                   <a href="#">비밀번호 찾기</a><br/>
                   계정이 없으신가요? <a href="./Join">회원가입</a> 
@@ -71,7 +71,7 @@ export default {
 
   .custom-btn-primary{
     background-color :transparent;
-    background-image :url("../assets/kakao_login_medium_wide.png");
+    background-image :url("../assets/images/kakao_login_medium_wide.png");
     background-repeat: no-repeat;
     background-size :100%;
     height:100px;
@@ -80,7 +80,7 @@ export default {
   }
 
   .container{
-  padding-top:100px;
+  padding-top:200px;
   padding-bottom:100px;
 }
 
@@ -93,7 +93,7 @@ export default {
 	color:rgb(94, 94, 94);
 	font-family:Verdana;
 	font-size:19px;
-	padding:13px 140px;
+	padding:13px 135px;
 	text-decoration:none;
 	text-shadow:0px 0px 0px #283966;
 }

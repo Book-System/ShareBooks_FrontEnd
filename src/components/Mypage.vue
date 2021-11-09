@@ -1,24 +1,22 @@
 <template>
-    <div id="banner" class="col bg-dark p-5 rounded">
-          <h3 class="mypage">마이페이지</h3>
-    </div><br/>
+  <div class="main">
+        <div class="banner" >
+           <h2 class="banner-text">마이페이지</h2>
+        </div><br/>   
 
   <div class="container">
+   
     <div class="row">
         <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">마이페이지</h3>
-                </div>
-                    <ul class="list-group">
-                        <a href="./Updatemypage" class="list-group-item">내 정보수정</a>
-                        <a href="./Myactive" class="list-group-item">나의 활동내역</a>
-                        <a href="./Mypagewriting" class="list-group-item">글 관리</a>
-                        <a href="#" class="list-group-item">책 추천</a>
-                        <a href="#" class="list-group-item">즐겨찾기</a>
-                    </ul>
-              </div>
-        </div>
+            <div class="list-group">
+                    <a href="./mypage" class="list-group-item list-group-item-action">마이페이지</a>
+                    <a href="./Updatemypage" class="list-group-item list-group-item-action">내 정보 수정</a>
+                    <a href="./Myactive" class="list-group-item list-group-item-action">나의 활동 내역</a>
+                    <a href="./Mypagewriting" class="list-group-item list-group-item-action">글 관리</a>
+                    <a href="#" class="list-group-item list-group-item-action">책 추천</a> 
+                    <a href="#" class="list-group-item list-group-item-action">즐겨찾기</a> 
+            </div>
+      </div>
 
         <div class="col-md-7">
           <div class="card" style="padding:30px">
@@ -41,7 +39,7 @@
                       </div>
 
                       <div class="col-lg-4">
-                        <h4>나의 활동내역 보기</h4>
+                        <a href="./Myactive" >나의 활동 내역 보기</a>
                         <p>내가 빌려준 책</p>
                         <p>0</p>
                         <p>내가 빌린 책</p>
@@ -49,7 +47,7 @@
                       </div>
 
                       <div class="col-lg-4">
-                        <h4>내가 쓴글 보기</h4>
+                         <a href="./Mypagewriting" >내가 쓴 글 보기</a>
                         <p>내가 쓴 게시글</p>
                         <p>0</p>
                         <p>내가 쓴 리뷰</p>
@@ -62,6 +60,7 @@
           </div>
         </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -79,4 +78,25 @@
   .btn {
     margin-left: 80px;
   }
+
+.container{
+
+  padding-bottom:100px;
+}
+
+.banner{
+    background-color:#d1c4e92d;
+     width:100%;
+     height:250px;
+}
+.banner-text{
+ text-align: center;
+ padding-top:150px;
+  color: #000;
+
+}
+
+   
+
+
 </style>

@@ -1,9 +1,10 @@
 <template>
-   
+<div class="main">
+        <div class="banner" >
+          <img src="../assets/images/bookimage3.png" style="width:350px; height:240px;margin-top:0px; margin-left:520px; " /> 
+        </div><br/>   
 <div class="container">
-   <div class="welcome">
-   <img src="../assets/images/bookimage.png" style="width:450px; height:240px; margin-left:450px; " />  
-  </div> 
+ 
   <div class="row">
     <div class="col">
     </div>
@@ -37,23 +38,15 @@
           </div>
           <br/>
 
-          <div class="d-flex">
-          <label>시작일&nbsp;&nbsp; </label>
-          <p><input type="date"></p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-          <label>반납일&nbsp;&nbsp; </label>
-          <p><input type="date"></p><br/>
-          </div>
-
           <label>주소</label>
           <div class="row">
             <div class="col-sm-6">
               <input type="text" class="form-control" v-model="postcode" placeholder="우편번호" aria-describedby="basic-addon1">
             </div>
             <div class="col-sm-4 ">
-              <input type="button" class="btn" @click="execDaumPostcode()" value="우편번호 찾기">
+              <input type="button" class="btn" @click="execDaumPostcode()" value="우편번호 찾기"><br/>
             </div>
-            <div class="col-sm-8"><br/>
+            <div class="col-sm-8">
               <input type="text" class="form-control" v-model="address" placeholder="주소"  aria-describedby="basic-addon1"><br>
             </div>
           </div>
@@ -149,6 +142,7 @@
         </div>
   </div>
 </div>
+</div>
 </template>
 
 <script>
@@ -224,8 +218,17 @@ export default {
 </script>
 
 <style scoped>
-.container{
-  padding-top:20px;
+.main{
+  padding-top:80px;
+}
+
+.banner{
+    background-color:#6ac0cf42;
+     width:100%;
+     height:200px;
+
+}
+.container{ 
   padding-bottom:100px;
 }
 #joinbtn {
@@ -238,8 +241,8 @@ export default {
 	cursor:pointer;
 	color:#fff;
 	font-family:Verdana;
-	font-size:19px;
-	padding:7px 20px;
+	font-size:18px;
+	padding:5px 20px;
 	text-decoration:none;
 	text-shadow:0px 0px 0px #6ac0cfa6;
 }
