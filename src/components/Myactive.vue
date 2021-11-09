@@ -93,7 +93,7 @@
   }
 </script>
 
-<style> 
+<style scoped> 
 
   .btn-family{   
     margin: 10px auto;
