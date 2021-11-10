@@ -48,12 +48,16 @@
                             <!-- 좋아요, 댓글 -->
                             <div class="d-flex" style="height:40px;">
                                     <div>
+                                        <button type="button" v-on:click="isActive=!isActive" v-bind:class="{ child: isChild, 'is-active': isActive }">
                                         &emsp;<img src="../assets/images/heart.png" alt="이미지" style="width: 20px; height:22px">
-                                        공감하기
+                                        공감하기</button>
+                                         <button type="button" class="btn_like" >
+                                        &emsp;<img src="../assets/images/heart.png" alt="이미지" style="width: 20px; height:22px">
+                                        공감하기</button>
                                     </div>&emsp;&emsp;
 
                                     <div>
-                                        <button type="button" class="btn_img" @click="handle_comment">
+                                        <button type="button" class="btn_comment" @click="handle_comment">
                                             <img src="../assets/images/chat.png" alt="이미지" style="width: 20px; height:22px">
                                             댓글 1</button>
                                     </div>
@@ -119,14 +123,17 @@
         data() {
             return {
             is_show: false,
+            ischild: true,
+            isActive: true,
             }
         },
         methods: {
             handle_comment() {
                 this.is_show = !this.is_show;
-            }
+            },
         }
     }
+    
 </script>
 
 <style scoped>
@@ -161,10 +168,20 @@
         object-fit: cover;
     }
 
-    .btn_img {
+    .btn_comment {
         border: none;
         background-color: #fff;
     }
+
+    .btn_like {
+        border: none;
+        background-color: #fff;
+        transition: background-color 0.4s;
+    }
+    .is-active {
+        background: #ffda33;
+    }
+
     .around {
         display: flex;
         justify-content: space-between;
