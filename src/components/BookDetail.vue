@@ -1,287 +1,248 @@
 <template>
     <div class="container">
-        <div class="row g-0">
-            <div class="col-md-7">
-                <!-- 판매 기본 정보 --> 
+        <div class="df jc-sb ai-t w-75 mt-20 md-20">
+            <div class="w-70">
+                <!-- 메인 이미지 및 서브 이미지 -->
                 <div>
-                    <!-- 메인 이미지 및 서브 이미지 -->
-                    <div>
-                        <vueper-slides ref="vueperslides1" :touchable="false" fade :autoplay="false" :bullets="false" @slide="$refs.vueperslides2.goToSlide($event.currentSlide.index, { emit: false })" fixed-height="400px">
-                            <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image">
-                            </vueper-slide>
-                        </vueper-slides>
-
-                        <vueper-slides class="no-shadow thumbnails" ref="vueperslides2" @slide="$refs.vueperslides1.goToSlide($event.currentSlide.index, { emit: false })" :visible-slides="slides.length" fixed-height="75px" :bullets="false" :touchable="false" :gap="2.5" :arrows="false">
-                            <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" @click="$refs.vueperslides2.goToSlide(i)">
-                            </vueper-slide>
-                        </vueper-slides>
-                    </div><br><br>
-
-                    <!-- 판매 제목 & 판매 내용 -->
-                    <div>
-                        <h3>[대연동] 인간실격 책 대여해드립니다.</h3>
-                        <div>
-                            <textarea class="autosize" readonly style="width:100%; height: 250px; border:0; overflow:hidden; pointer-events: none">
-[상태 완전 좋은 인간실격 책]              
-예약 후, 정확한 주소와 메시지가 전달됩니다.
-
-[감상평]
-헬스장을 방문해 보신 분들은 알겠지만, 렉이라는 물건이 있습니다. 여러 가지 종류가 있지만 현재 홈짐에서 각광받는 렉 중 하나인 미니렉을 보유하고 있습니다. 기본적으로 3대 운동을 수행할 수 있고 바벨로 할 수 있는 운동들도 굉장히 많기 때문에 미니 렉 하나만 구비하신다면 앞서 말한 공간에서 충분히 근력운동을 할 수 있습니다.!
-                            </textarea>
+                    <vueper-slides class="no-shadow" ref="vueperslides1" :touchable="false" fade :autoplay="false" :bullets="false" @slide="$refs.vueperslides2.goToSlide($event.currentSlide.index, { emit: false })" fixed-height="400px">
+                        <vueper-slide v-for="(index, idx) in bookData.imageCount" :key="index" :image="`/REST/api/book/image?bookno=${bookData.no}&priority=${idx}`">
+                        </vueper-slide>
+                    </vueper-slides>
+                    <vueper-slides style="margin-top: 5px;" class="no-shadow thumbnails" ref="vueperslides2" @slide="$refs.vueperslides1.goToSlide($event.currentSlide.index, { emit: false })" :visible-slides="bookData.imageCount" fixed-height="75px" :bullets="false" :touchable="false" :gap="2.5" :arrows="false">
+                        <vueper-slide v-for="(index, idx) in bookData.imageCount" :key="index" :image="`/REST/api/book/image?bookno=${bookData.no}&priority=${idx}`" @click="$refs.vueperslides2.goToSlide(idx)">
+                        </vueper-slide>
+                    </vueper-slides>
+                </div>
+                <!-- 글 제목, 글 내용 -->
+                <div style="text-align: justify;">
+                    <div style="margin-top: 30px; margin-bottom: 10px; font-size: 27px;">
+                        <div style="display: flex; justify-content: left; align-items: center;">
+                            
+                            <span>{{bookData.list.title}}</span>
                         </div>
                     </div>
-                    
-                    <!-- 거래 장소 --> 
                     <div>
-                        <h3>빌려주는사람님과의 거래장소</h3>
-                        <div>
-                            <div id="map" style="width:100%;height:300px;"></div>
-                        </div>
-                    </div><br><br>
+                        <span style="font-size: 18px;">예약 후, 정확한 주소와 메세지가 전송됩니다.</span>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <span style="font-size: 18px; white-space: pre-line;">{{bookData.list.content}}</span>
+                    </div>
+                </div>
 
-                    <!-- 책 정보 -->
-                    <div>
-                        <h3>책정보</h3>
-                        <div style="display: flex; justify-content: space-between; text-align: center;">
-                            <div style="width: 35%">
-                                <img src="../assets/images/neighbor.png" alt="이미지" style="width: 100%; height: 100%">
-                            </div>
-                            <div style="width: 65%; text-align: left; margin-left: 20px;">
-                                <p>인간실격 / 스릴러</p>
-                                <p>인간의 나약함을 탁월하게 묘사하는 다자이 오사무의 작품을 새롭게 읽는다. 순수하고 여린 심성의 젊은이가 인간 사회의 위선과 잔혹성을 견디지 못하고 파멸되어 가는 과정을 그린 소설로, 어느 세계에도 속하지 못한 채 인간 실격자로 전락한 주인공의 내면을 치밀한 심리묘사로 기록하였다. 다자이 작품 속의 타락과 자기파괴적 언행은 제2차 세계대전에서 패망한 후 공황상태에 빠진 일본 젊은이들의 의식을 반영하고 있다.</p>
-                            </div>
+                <!-- 거래 장소 -->
+                <div style="text-align: justify;">
+                    <div style="margin-top: 30px; margin-bottom: 10px; font-size: 27px;">
+                        <div style="display: flex; justify-content: left; align-items: center;">
+                            <img src="../assets/shareBooksIcon/share_books_icon_02.png" alt="image" style="width: 28px; height: 28px; margin-right: 10px;">
+                            <span>{{bookData.list.member_Name}}님의 대여장소</span>
                         </div>
-                    </div><br><br>
-
-                    <!-- 태그 정보 -->
+                    </div>
+                    <div id="map" style="width: 100%; height: 450px; margin-top: 5px;"></div>
+                </div>
+                
+                <!-- 책 정보 -->
+                <div style="text-align: justify;">
+                    <div style="margin-top: 30px; margin-bottom: 10px; font-size: 27px;">
+                        <div style="display: flex; justify-content: left; align-items: center;">
+                            <img src="../assets/shareBooksIcon/share_books_icon_01.png" alt="image" style="width: 30px; height: 30px; margin-right: 10px;">
+                            <span>책 정보</span>
+                        </div>
+                    </div>
                     <div>
-                        <h3>태그정보</h3>
-                        <div>
-                            <p>#고구마 #감자 #부아이스 #인간실격</p>
+                        <div style="font-size: 20px;">
+                            <span>{{bookData.list.book_Title}} / {{bookData.list.category_Name}}</span><br>
+                            <span style="font-size: 18px;">{{bookData.list.book_Content}}</span>
                         </div>
                     </div>
                 </div>
-                <hr />
+                
+                <!-- 태그 정보 -->
+                <div style="text-align: justify;">
+                    <div style="margin-top: 30px; margin-bottom: 10px; font-size: 27px;">
+                        <div style="display: flex; justify-content: left; align-items: center;">
+                            <img src="../assets/shareBooksIcon/share_books_icon_04.png" alt="image" style="width: 28px; height: 28px; margin-right: 10px;">
+                            <span>태그정보</span>
+                        </div>
+                    </div>
+                    <span style="font-size: 18px;">{{bookData.list.tag}}</span>
+                </div>
 
-                <!-- 리뷰 정보 -->
-                <div>
-                    <!-- 개선본 -->
-                    <div>
-                        <!-- 리뷰 개수 & 리뷰 쓰기 -->
-                        <div>
-                            <div style="display: flex; justify-content: space-between; text-align: center;">
-                                <div>
-                                    <h3 style="display: inline">3개의 리뷰</h3>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn " style="height: 30px" @click="handle_toggle">리뷰쓰기</button>
-                                </div>
-                            </div><br>
-                            <div v-if="is_show">
-                                <div class="allcontainer">
-                                    <div class="containers">
-                                        <div class="row">
-                                            <div class="col-md-12 card">
-                                                <div class="card-body">
-                                                    <label>리뷰쓰기</label>
-                                                    <div class="star-rating space-x-4">
-                                                        <input type="radio" id="5-stars" name="rating" value="5" v-model="ratings" />
-                                                        <label for="5-stars" class="star pr-4">★</label>
-                                                        <input type="radio" id="4-stars" name="rating" value="4" v-model="ratings" />
-                                                        <label for="4-stars" class="star">★</label>
-                                                        <input type="radio" id="3-stars" name="rating" value="3" v-model="ratings" />
-                                                        <label for="3-stars" class="star">★</label>
-                                                        <input type="radio" id="2-stars" name="rating" value="2" v-model="ratings" />
-                                                        <label for="2-stars" class="star">★</label>
-                                                        <input type="radio" id="1-star" name="rating" value="1" v-model="ratings" />
-                                                        <label for="1-star" class="star">★</label>
-                                                    </div>
-
-                                                    <div class="form-floating">
-                                                        <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
-                                                    </div>
-                                                    <br />
-
-                                                    <div style="text-align: right"> 
-                                                         <input type="submit" class="btn" value="댓글달기"><br/>                                                 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-
-                                            </div>
+                <!-- 리뷰 -->
+                <div style="text-align: justify; margin-top: 70px;">
+                    <div style="margin-top: 30px; margin-bottom: 10px; font-size: 27px;">
+                        <span>{{reviewData.count}}개의 리뷰 ★ {{reviewData.rating}}</span>
+                    </div>
+                    <div style="width: 100%; height: 1px; background-color: #d2d2d2;"></div>
+                    <!-- 실제 리뷰 표시 -->
+                    <div v-if="reviewData.list.length === 0" style="margin-top: 20px; font-size: 18px;">
+                        <span>아직 등록된 리뷰가 없습니다!</span>
+                    </div>
+                    <div v-for="review in reviewData.list" :key="review">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                            <div style="width: 15%; text-align: center;">
+                                <el-avatar :size="100" style="background-color: #fff; border: 1px solid #d2d2d2;" :src="`http://localhost:9090/REST/api/member/image?memberid=${review.member.id}`"></el-avatar>
+                            </div>
+                            <div style="width: 85%;">
+                                <div style="margin-left: 10px;">
+                                    <div style="margin-bottom: 10px;">
+                                        <div style="display: flex; justify-content: left; align-items: center;">
+                                            <span style="font-size: 20px; ">{{review.member.nickname}}</span>
+                                            <span style="font-size: 17px; margin-left: 10px;" v-text="handleRegdate(review.regdate)"></span>
                                         </div>
+                                        <el-rate disabled v-model="review.rating" :colors="['#99A9BF', '#F7BA2A', '#FF9900']" allow-half></el-rate>
                                     </div>
+                                    <span style="font-size: 17px;">{{review.content}}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <br/>
-
-
-
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="rating-block">
-                            <h2 class="bold padding-bottom-7">4.5 <small>/ 5</small></h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="containers">
-                    <div class="card" style="width:680px">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-                                    <!-- <p class="text-secondary text-center">15 Minutes Ago</p> -->
-                                </div>
-                                <div class="col-md-10">
-                                    <a class="float-left" href="#"><strong>뭘봐</strong></a>
-                                    <div class="star-ratings">
-                                        <div class="star-ratings-fill space-x-2 text-lg" :style="{ width: ratingToPercent + '%' }">
-                                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                        </div>
-                                        <div class="star-ratings-base space-x-2 text-lg">
-                                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <p>책 너무 잘읽었어요~~</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width:680px">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-                                    <!-- <p class="text-secondary text-center">15 Minutes Ago</p> -->
-                                </div>
-                                <div class="col-md-10">
-                                    <a class="float-left" href="#"><strong>히힣</strong></a>
-                                    <div class="star-ratings">
-                                        <div class="star-ratings-fill space-x-2 text-lg" :style="{ width: ratingToPercent + '%' }">
-                                            <span>★</span><span>★</span><span>★</span><span>★</span>
-                                        </div>
-                                        <div class="star-ratings-base space-x-2 text-lg">
-                                            <span>★</span><span>★</span><span>★</span><span>★</span>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <p>나름 ㄱㅊㄱㅊ</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width:680px">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-                                    <!-- <p class="text-secondary text-center">15 Minutes Ago</p> -->
-                                </div>
-                                <div class="col-md-10">
-                                    <a class="float-left" href="#"><strong>바부</strong></a>
-                                    <div class="star-ratings">
-                                        <div class="star-ratings-fill space-x-2 text-lg" :style="{ width: ratingToPercent + '%' }">
-                                            <span>★</span><span>★</span><span>★</span>
-                                        </div>
-                                        <div class="star-ratings-base space-x-2 text-lg">
-                                            <span>★</span><span>★</span><span>★</span>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <p>잘빌렸음 책 좀 더러움</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br />
             </div>
-
-            <div class="col-md-4" style="margin-left: 20px;">
-                <div class="card" id="viewcard">
-                    <div class="row g-0">
-                        <div class="col-md-12">
-                            <div style="text-align:center;">
-                                <p>빌려주는 사람님의 홈짐</p>
-                                <p>"서울 강남구 가로수길 5"<br>에 위치한 홈짐입니다.</p><br />
-                            </div>
-                            <div style="text-align:right;">
-                                <h4>5000원</h4>
-                            </div>
-                            <div class="button">
-                            <input type="button" class="btn" value="수정 및 삭제하기"><br/>
-                            </div>
-                        </div>
+            <div class="w-30">
+                <div style="width: 100%; background-color: #fff; margin-left: 20px; padding: 25px; text-align: center;">
+                    <p style="font-size: 25px;"><img src="../assets/emoticon/ping2.png" alt="image" style="width: 28px; height: 28px; margin-right: 10px; vertical-align: top;"><strong>{{bookData.list.member_Nickname}}</strong>님의 대여위치</p>
+                    <p style="font-size: 21px;"><strong>"{{bookData.list.address}}"</strong><br>에서 거래를 진행합니다</p>
+                    <div style="text-align: right;">
+                        <span style="font-size: 18px;">1일 대여료</span><br>
+                        <span style="font-size: 30px;">{{bookData.list.price}}원</span>
+                    </div>
+                    <div v-if="!checkWriteMember">
+                        <el-button type="info" style="font-family: 'Jua', sans-serif; width: 100%; margin-top: 20px; background-color: #fff; border: 1.8px solid #5B6EBC; color: #5B6EBC; font-size: 18px; padding-right: 25px; padding-left: 25px; padding-top: 15px; padding-bottom: 15px;" @click="handleReservation">예약하러 가기</el-button><br>
+                        <el-button type="info" style="font-family: 'Jua', sans-serif; width: 100%; margin-top: 5px;background-color: #5B6EBC; font-size: 18px; padding-right: 25px; padding-left: 25px; padding-top: 15px; padding-bottom: 15px;" @click="handleChat">문의하러 가기</el-button>
+                    </div>
+                    <div v-if="checkWriteMember">
+                        <el-button type="info" style="font-family: 'Jua', sans-serif; width: 100%; margin-top: 20px; background-color: #fff; border: 1.8px solid #5B6EBC; color: #5B6EBC; font-size: 18px; padding-right: 25px; padding-left: 25px; padding-top: 15px; padding-bottom: 15px;" @click="handleUpdate">수정하기</el-button><br>
+                        <el-button type="info" style="font-family: 'Jua', sans-serif; width: 100%; margin-top: 5px;background-color: #5B6EBC; font-size: 18px; padding-right: 25px; padding-left: 25px; padding-top: 15px; padding-bottom: 15px;" @click="handleDelete">삭제하기</el-button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- 로그인 다이어로그 -->
+        <el-dialog title="서비스 안내" v-model="dialogVisible" width="500px">
+        <div style="height: 1px; background-color: #dfdfdf;"></div>
+        <div style="font-size: 16px; margin-top: 10px; margin-bottom: 10px; color: #3D3D3D">
+            <span>해당 서비스는 <strong>로그인</strong> 후 사용가능합니다.</span><br>
+            <span>비회원인 경우 <strong>회원가입</strong>을 먼저 신청해주세요!</span>
+        </div>
+        <div style="height: 1px; background-color: #dfdfdf;"></div>
+        <template #footer>
+            <div style="text-align: center;">
+            <span class="dialog-footer">
+                <el-button type="info" @click="handleLoginDialog(true)" style="font-family: 'Jua', sans-serif; font-size: 16px; background-color: #5B6EBC; color: #fff;">로그인</el-button>
+                <el-button type="info" @click="handleLoginDialog(false)" style="font-family: 'Jua', sans-serif; font-size: 16px; background-color: #6D747D; color: #fff;">창닫기</el-button>
+            </span>
+            </div>
+        </template>
+        </el-dialog>
     </div>
 </template>
 
 <script>
-    import {
-        VueperSlides,
-        VueperSlide
-    } from 'vueperslides'
-    import 'vueperslides/dist/vueperslides.css'
+    import {getCurrentInstance} from '@vue/runtime-core'    
+    import {VueperSlides, VueperSlide} from 'vueperslides';
+    import 'vueperslides/dist/vueperslides.css';
+    import axios from 'axios';
     export default {
         components: {
             VueperSlides,
             VueperSlide
         },
-        name: 'App',
         data() {
             return {
-                slides: [
-                    { image: require('@/assets/images/chatting2.png') },
-                    { image: require('@/assets/images/default.jpg') },
-                    { image: require('@/assets/images/analyzing.png') }
-                ],
-                is_show: false,
+                // 채팅에 필요한 정보
+                opponent :'',
+                self : '',
+                // 책 정보
+                bookData: {
+                    no  : this.$route.query.bookno,
+                    imageCount: 0,
+                    list: [],
+                },
+                // 리뷰 정보
+                reviewData: {
+                    count : 0,
+                    rating: 0,
+                    list  : []
+                },
+                // 카카오 맵
                 map: null,
-                markerPositions1: [
-                    [33.452278, 126.567803],
-                    [33.452671, 126.574792],
-                    [33.451744, 126.572441],
-                ],
-                markerPositions2: [
-                    [37.499590490909185, 127.0263723554437],
-                    [37.499427948430814, 127.02794423197847],
-                    [37.498553760499505, 127.02882598822454],
-                    [37.497625593121384, 127.02935713582038],
-                    [37.49629291770947, 127.02587362608637],
-                    [37.49754540521486, 127.02546694890695],
-                    [37.49646391248451, 127.02675574250912],
-                ],
                 markers: [],
-                infowindow: null,
-            };
+                // 글 작성자인지 판단하는 변수
+                checkWriteMember: false,
+                // 로그인 검증 다이어로그
+                dialogVisible: false,
+                // 예약완료 조회 변수
+                checkReservationButton: false   
+            }
+        },
+        async created() {
+            const app = getCurrentInstance();
+            this.$socket = app.appContext.config.globalProperties.$socket;
+            await this.bookDetail();
+            await this.checkLogin();
+            await this.bookImageCount();
+            await this.reviewCount();
+            await this.reviewList();
+            await this.updateMap();
+            
+        
         },
         mounted() {
+            // 카카오 맵
             if (window.kakao && window.kakao.maps) {
                 this.initMap();
             } else {
                 const script = document.createElement("script");
                 /* global kakao */
                 script.onload = () => kakao.maps.load(this.initMap);
-                script.src =
-                    "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=915cffed372954b7b44804ed422b9cf0";
+                script.src = "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=915cffed372954b7b44804ed422b9cf0";
                 document.head.appendChild(script);
             }
         },
         methods: {
-            handle_toggle() {
-                this.is_show = !this.is_show;
+            // 글 수정 메소드
+            handleUpdate() {
+                return this.$router.push({path:'/book/update', query: {bookno: this.bookData.no}});
             },
+            // 글 삭제 메소드
+            async handleDelete() {
+                const checkConfirm = confirm("정말 삭제하시겠습니까?");
+                if(checkConfirm){
+                    const url = `/REST/api/book/remove`;
+                    const body = {"bookNo" : this.bookData.no};
+                    const headers = {"Content-Type" : "application/json", "token" : sessionStorage.getItem("TOKEN")};
+                    const response = await axios.delete(url, {headers : headers, data : body});
+                    if(response.data.result === 1) {
+                        alert("글 삭제가 완료되었습니다.");
+                        return this.$router.push({path: '/book/place'});
+                    }
+                }
+            },
+            // 글을 조회한 사용자가 본인인지 타인인지 확인하는 메소드
+            async checkLogin() {
+                const token = sessionStorage.getItem("TOKEN");
+                // token = sessionStorage.getItem("TOKEN");
+
+                if(token === null) {
+                    this.checkWriteMember = false;
+                }else {
+                    // 토큰 값을 통해 회원 정보 가져오기, 없을 경우도 동일
+                    const url = `/REST/api/member/information`;
+                    const headers = {"Content-Type" : "application/json", "token" : token};
+                    const response = await axios.get(url, {headers});
+                    
+                    if(response.data.result === 1) {
+                        var member = response.data.data;
+                        if(this.bookData.list.member_Id === member.id) {
+                            this.checkWriteMember = true;
+                        }else {
+                            this.checkWriteMember = false;
+                        }
+                        this.self = response.data.data.nickname;
+                    }
+                }
+            },
+            // 카카오 맵
             initMap() {
                 const container = document.getElementById("map");
                 const options = {
@@ -290,146 +251,171 @@
                 };
                 this.map = new kakao.maps.Map(container, options);
             },
-        },
-        ratingToPercent() {
-            const score = +this.restaurant.averageScore * 20;
-            return score + 1.5;
+            //주소로 지도 업데이트
+            updateMap(){
+                // 맵만들기
+                let mPosition = [];
+                let thisTemp = this;
+                const container = document.getElementById("map");
+                const options = {
+                    center: new kakao.maps.LatLng(33.450701, 126.570667),
+                    level: 3,
+                };
+                this.map = new kakao.maps.Map(container, options);
+                
+                // 주소-좌표 변환 객체를 생성합니다
+                var geocoder = new kakao.maps.services.Geocoder();
+                var bookDataAddress = this.bookData.list.address;
+
+                function first(callback) {
+                    setTimeout(() => {
+                        // 주소로 좌표를 검색합니다
+                        geocoder.addressSearch(bookDataAddress, function(result, status) {
+                            // 정상적으로 검색이 완료됐으면 
+                            if (status === kakao.maps.services.Status.OK) {
+                                var temp = [result[0].y, result[0].x];
+                                callback(null, temp);
+                            }
+                        });
+                    }, 1000);
+                }
+                first(function (error, value) {
+                    if(error) {
+                        console.log(error);
+                    }else {
+                        mPosition[0] = value;
+                        thisTemp.displayMarker(mPosition);
+                    }
+                });
+                this.mPosition = mPosition;
+            },
+            // 마크 찍기
+            displayMarker(mPosition) {
+                // 마커이미지의 주소입니다.
+                var imageSrc = '/image/share_books_marker.png';   
+                // 마커이미지의 크기입니다.
+                var imageSize = new kakao.maps.Size(50, 70); 
+                // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+                var imageOption = {offset: new kakao.maps.Point(25, 70)};
+
+                const positions = mPosition.map((position) => new kakao.maps.LatLng(...position));
+                if(positions.length > 0) {
+                    var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
+                    this.markers = positions.map((position) => new kakao.maps.Marker({
+                        map: this.map,
+                        position: position,
+                        image: markerImage
+                    }));
+
+                    const bounds = positions.reduce((bounds, latlng) => bounds.extend(latlng), new kakao.maps.LatLngBounds());
+                    this.map.setBounds(bounds);
+                }
+            },
+            // 책 정보 가져오기
+            async bookDetail() {
+                const url = `/REST/api/book/detail?bookno=${this.bookData.no}`;
+                const headers = {"Content-Type" : "application/json"};
+                const response = await axios.get(url, {headers});
+                console.log("안녕하세요.", response);
+                if(response.data.result === 1) {
+                    this.bookData.list = response.data.data;
+                }
+            },
+            // 책 이미지 개수 가져오기
+            async bookImageCount() {
+                const url = `/REST/api/book/image/count?bookno=${this.bookData.no}`;
+                const headers = {"Content-Type" : "application/json"};
+                const response = await axios.get(url, headers);
+                if(response.data.result > 0) {
+                    this.bookData.imageCount = response.data.result;
+                }
+            },
+            // 리뷰 개수, 평점 가져오기
+            async reviewCount() {
+                const url = `/REST/api/review/avg?bookno=${this.bookData.no}`;
+                const headers = {"Content-Type" : "application/json"};
+                const response = await axios.get(url, {headers});
+                if(response.data.data !== null) {
+                    this.reviewData.count = response.data.data.count;
+                    this.reviewData.rating = response.data.data.rating;
+                }else {
+                    this.reviewData.count = 0;
+                    this.reviewData.rating = 0;
+                }
+            },
+            // 리뷰 목록 가져오기
+            async reviewList() {
+                const url = `/REST/api/review/match/list?bookno=${this.bookData.no}`;
+                const headers = {"Content-Type" : "application/json"};
+                const response = await axios.get(url, {headers});
+                if(response.data.result === 1) {
+                    this.reviewData.list = response.data.list;
+                }
+            },
+            // 예약페이지 이동
+            handleReservation() {
+                if(sessionStorage.getItem("TOKEN") === null) {
+                    return this.dialogVisible = true;
+                }
+                this.$router.push({path:'/book/reservation', query: {bookno: this.bookData.no}});
+            },
+            // 문의페이지 이동
+            handleChat() {
+                if(sessionStorage.getItem("TOKEN") === null) {
+                    return this.dialogVisible = true;
+                }
+                //방접속
+                this.$socket.emit('publish',{
+                    data: { 
+                    room : this.bookData.list.member_Nickname+this.self ,
+                    code:2,
+                    username: this.self,
+                    } 
+                });
+                
+                this.$router.push({path: '/book/chat'});
+                sessionStorage.setItem("seller",this.bookData.list.member_Nickname);
+                sessionStorage.setItem("buyer",this.self);
+                // var ret = window.open("/book/chat","CHATTING","width=1500,height=800,location=no,scrollbars=yes");
+                // ret.open();
+            },
+            // 날짜 변환
+            handleRegdate(value){
+                // 들어오는 value 값이 공백이면 그냥 공백으로 돌려줌
+                if(value == '') return '';
+            
+                // 현재 Date 혹은 DateTime 데이터를 javaScript date 타입화
+                var js_date = new Date(value);
+
+                // 연도, 월, 일 추출
+                var year = js_date.getFullYear();
+                var month = js_date.getMonth() + 1;
+                var day = js_date.getDate();
+
+                // 월, 일의 경우 한자리 수 값이 있기 때문에 공백에 0 처리
+                if(month < 10){
+                    month = '0' + month;
+                }
+
+                if(day < 10){
+                    day = '0' + day;
+                }
+
+                // 최종 포맷 (ex - '2021-10-08')
+                return year + '-' + month + '-' + day;
+            },
+            handleLoginDialog(value) {
+                if(value === true){
+                    this.$router.push({path: '/login'});
+                }else{
+                    this.dialogVisible = value;
+                }
+            }
         }
     }
 </script>
 
 <style scoped>
-.container{
-    padding-top:150px;
-}
-    .star-ratings {
-        color: #aaa9a9;
-        position: relative;
-        unicode-bidi: bidi-override;
-        width: max-content;
-        -webkit-text-fill-color: transparent;
-        /* Will override color (regardless of order) */
-        -webkit-text-stroke-width: 1.3px;
-        -webkit-text-stroke-color: #2b2a29;
-    }
-
-    .star-ratings-fill {
-        color: #fff58c;
-        padding: 0;
-        position: absolute;
-        z-index: 1;
-        display: flex;
-        top: 0;
-        left: 0;
-        overflow: hidden;
-        -webkit-text-fill-color: gold;
-    }
-
-    .star-ratings-base {
-        z-index: 0;
-        padding: 0;
-    }
-
-    .star-rating {
-        display: flex;
-        flex-direction: row-reverse;
-        font-size: 2.25rem;
-        line-height: 2.5rem;
-        justify-content: space-around;
-        padding: 0 0.2em;
-        text-align: center;
-        width: 5em;
-    }
-
-    .star-rating input {
-        display: none;
-    }
-
-
-    .review {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a {
-        text-decoration: none;
-        color: #000;
-    }
-
-    a:hover {
-        text-decoration: none;
-        color: #fff
-    }
-
-
-
-    .star-rating label {
-        -webkit-text-fill-color: transparent;
-        /* Will override color (regardless of order) */
-        -webkit-text-stroke-width: 2.3px;
-        -webkit-text-stroke-color: #2b2a29;
-        cursor: pointer;
-    }
-
-    .star-rating :checked~label {
-        -webkit-text-fill-color: gold;
-    }
-
-    .star-rating label:hover,
-    .star-rating label:hover~label {
-        -webkit-text-fill-color: #fff58c;
-    }
-
-    .animated {
-        -webkit-transition: height 0.2s;
-        -moz-transition: height 0.2s;
-        transition: height 0.2s;
-    }
-
-
-    .star-ratings {
-        color: #aaa9a9;
-        position: relative;
-        unicode-bidi: bidi-override;
-        width: max-content;
-        -webkit-text-fill-color: transparent;
-        /* Will override color (regardless of order) */
-        -webkit-text-stroke-width: 1.3px;
-        -webkit-text-stroke-color: #2b2a29;
-    }
-
-    .star-ratings-fill {
-        color: #fff58c;
-        padding: 0;
-        position: absolute;
-        z-index: 1;
-        display: flex;
-        top: 0;
-        left: 0;
-        overflow: hidden;
-        -webkit-text-fill-color: gold;
-    }
-
-    .star-ratings-base {
-        z-index: 0;
-        padding: 0;
-    }
-
-    .star-rating {
-        display: flex;
-        flex-direction: row-reverse;
-        font-size: 2.25rem;
-        line-height: 2.5rem;
-        justify-content: space-around;
-        padding: 0 0.2em;
-        text-align: center;
-        width: 5em;
-    }
-
-    .star-rating input {
-        display: none;
-    }
-
     #viewcard {
         padding: 20px;
         display: inline-block;
@@ -455,26 +441,95 @@
     .thumbnails .vueperslide--active {
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
         opacity: 1;
-        border-color: #000;
+        border-color: #5B6EBC;
     }
 
-    .btn {
-  -webkit-border-radius: 5;
-  -moz-border-radius: 5;
-  border-radius: 5px;
-  font-family: Courier New;
-  color: #ffffff;
-  font-size: 15px;
-  background: #93cfca;
-  padding: 6px 9px 3px 9px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #b2dfdb;
-  text-decoration: none;
-}
-.button{
-    text-align: center;
-}
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5F7FB;
+        color: #4F4F4F;
+    }
+    .df {
+        display: flex;
+    }
+    .jc-c {
+        justify-content: center;
+    }
+    .jc-sb {
+        justify-content: space-between;
+    }
+    .ai-c {
+        align-items: center;
+    }
+    .ai-t {
+        align-items: top;
+    }
+    .mt-5 {
+        margin-top: 5px;
+    }
+    .mt-10 {
+        margin-top: 10px;
+    }
+    .mt-15 {
+        margin-top: 15px;
+    }
+    .mt-20 {
+        margin-top: 20px;
+    }
+    .mt-25 {
+        margin-top: 25px;
+    }
+    .mt-30 {
+        margin-top: 30px;
+    }
+    .md-20 {
+        margin-bottom: 20px;
+    }
+    .w-100 {
+        width: 100%;
+    }
+    .w-95 {
+        width: 95%;
+    }
+    .w-90 {
+        width: 90%;
+    }
+    .w-85 {
+        width: 85%;
+    }
+    .w-80 {
+        width: 80%;
+    }
+    .w-75 {
+        width: 75%;
+    }
+    .w-70 {
+        width: 70%;
+    }
+    .w-65 {
+        width: 65%;
+    }
+    .w-50 {
+        width: 50%;
+    }
+    .w-35 {
+        width: 35%;
+    }
+    .w-30 {
+        width: 30%;
+    }
+    .w-25 {
+        width: 25%;
+    }
+    .w-20 {
+        width: 20%;
+    }
+    .w-10 {
+        width: 10%;
+    }
+    .w-5 {
+        width: 5%;
+    }
 </style>

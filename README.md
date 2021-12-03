@@ -1,4 +1,4 @@
-# book_system_frontend
+# traveler_frontend
 
 ## Project setup
 ```
