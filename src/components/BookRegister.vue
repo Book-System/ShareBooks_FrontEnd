@@ -386,6 +386,7 @@
             },
             async handleBookRegister() {
                 if(this.bookData.title !== '' && this.bookData.content !== '' && this.bookData.address !== '' && this.bookData.price !== '' && this.bookData.category !== '' && this.bookData.tag !== '' && this.bookData.bookTitle !== '' && this.bookData.bookContent !== '' && this.bookData.fileList.length > 0){
+                    console.log(sessionStorage.getItem("TOKEN"));
                     const url = '/REST/api/book/register';
                     const headers = {"Content-Type" : "multipart/form-data", "token" : sessionStorage.getItem("TOKEN")};
                     const formData = new FormData();

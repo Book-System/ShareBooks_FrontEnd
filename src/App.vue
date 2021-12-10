@@ -261,7 +261,7 @@ export default {
         addressFocus: false,
         addressCheck: false,
         addressText : '주소를 입력해주세요.'
-      },
+      }
     }
   }
 }

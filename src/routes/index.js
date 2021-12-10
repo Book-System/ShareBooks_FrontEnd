@@ -1,7 +1,7 @@
 import {createWebHistory, createRouter} from 'vue-router';
 
 // COMPONENT
-import MyPage from '@/components/MyPage.vue';
+import MyPage from '@/components/Mypage.vue';
 import Login from '@/components/Login.vue';
 import Home from '@/components/Home.vue'; 
 import Join from '@/components/Join.vue';
@@ -41,7 +41,6 @@ const routes = [
 
     // SNS
     { path : '/book/sns', name :"BookSns", component : BookSns },
-
 ];
 
 // ROUTER

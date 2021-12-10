@@ -1231,7 +1231,6 @@
 
             // 초기 페이지를 내 활동보기로 설정
             this.index = 2;
-            
             this.handleMyInformation();
         },
         components : {
